@@ -1,1 +1,5 @@
 theme: jekyll-theme-slate
+title: 开源开发工具技术博客
+description: 编译器/工具链、模拟器、虚拟机、Linux内核、调试和性能分析工具
+markdown: kramdown
+url: "https://hellogcc.github.io"
