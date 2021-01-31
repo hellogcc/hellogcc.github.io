@@ -20,20 +20,20 @@ Copyright (c) 2011 陳韋任 (Chen Wei-Ren)
 
 網路上對 QEMU 有較為完整描述的文件為:
 
-```    QEMU, a Fast and Portable Dynamic Translator
-    Porting QEMU to Plan 9: QEMU Internals and Port Strategy
-```
+- [QEMU, a Fast and Portable Dynamic Translator](http://www.usenix.org/publications/library/proceedings/usenix05/tech/freenix/full_papers/bellard/bellard.pdf)
+- [Porting QEMU to Plan 9: QEMU Internals and Port Strategy](http://gsoc.cat-v.org/people/nwf/paper-strategy-plus.pdf)
+
 然而需要注意的是，上述文件在動態翻譯的部分均是針對 QEMU 0.9 版。QEMU 0.9 版以前是使用 dyngen 技術; QEMU 0.10 版以後採用 TCG。雖說如此，但在 QEMU 的其它部分差異不大，上述文件仍可供參考。SOURCEARCHIVE.com 收集了自 QEMU 0.6.1 版至今的所有 QEMU 源代碼。各位可以邊看文件邊看源代碼。
 
 QEMU 極為依賴 macro，這使得直接閱讀源代碼通常無法確定其函數呼叫，或是執行流程倒底為何。請在編譯 QEMU 的時候加上 `--extra-cflags="-save-temps"`，如此可得展開 marco 的 `*.i `檔。
 
 其餘部分請見:
 
-```    Getting started for developers
-    QEMU Internals
-    QEMU 目錄下的 HACKING、CODING_STYLE、tcg/README 和 doc/*
-    ISA reference manual。由於本篇文章是以 x86 為例，關於 x86 指令請見  x86/x64 指令编码内幕。
-```
+- [Getting started for developers](http://wiki.qemu.org/Documentation/GettingStartedDevelopers)
+- [QEMU Internals](http://qemu.weilnetz.de/qemu-tech.html)
+- QEMU 目錄下的 HACKING、CODING_STYLE、tcg/README 和 doc/*
+- ISA reference manual。由於本篇文章是以 x86 為例，關於 x86 指令請見  [x86/x64 指令编码内幕](http://www.mouseos.com/x64/index.html)。
+
 1. TCG
 
 TCG 是 QEMU 的核心。其基本流程如下:
@@ -44,14 +44,14 @@ TCG 是 QEMU 的核心。其基本流程如下:
 
 TCG 定義了一組 IR (intermediate representation)，熟悉 GCC 的各位對此應該不陌生。TCG IR 大致分成以下幾類:
 
-```    Move Operation: mov, movi, …
-    Logic Operation: and, or, xor, shl, shr, …
-    Arithmetic peration: add, sub, mul, div, …
-    Branch Operation: jmp, br, brcond
-    Fuction call: call
-    Memory Operation: ld, st
-    QEMU specific Operation: tb_exit, goto_tb, qemu_ld/qemu_st
-    ```
+- Move Operation: mov, movi, …
+- Logic Operation: and, or, xor, shl, shr, …
+- Arithmetic peration: add, sub, mul, div, …
+- Branch Operation: jmp, br, brcond
+- Fuction call: call
+- Memory Operation: ld, st
+- QEMU specific Operation: tb_exit, goto_tb, qemu_ld/qemu_st
+
 
 請見 `tcg/*`，特別是 tcg.i，可以看到 `TCGOpcode`。`tcg/README` 也別忘了。TCG 在翻譯 guest binary 的時候是以一個 `translation block (tb)` 為單位，其結尾通常是分支指令。
 
@@ -60,11 +60,11 @@ TCG 定義了一組 IR (intermediate representation)，熟悉 GCC 的各位對�
 1.2 TCG Flow
 
 先介紹一些資料結構:
-```
-    gen_opc_buf 和 gen_opparam_buf (translate-all.c) 分別放置 TCG Opcode 和 Operand。
-    如果使用靜態配置的緩衝區，static_code_gen_buffer (exec.c) 即為 code cache，放置 host binary。
-    在跳入/出 code cache 執行之前/後，要執行 prologue/epilogue，請見 code_gen_prologue (exec.c)。這邊的 prologue/epilogue 就是指 function prologue/epilogue。QEMU 將跳至 code cache (host binary) 執行的過程看成是函式呼叫，故有此 prologue/epilogue。
-```
+
+- gen_opc_buf 和 gen_opparam_buf (translate-all.c) 分別放置 TCG Opcode 和 Operand。
+- 如果使用靜態配置的緩衝區，static_code_gen_buffer (exec.c) 即為 code cache，放置 host binary。
+- 在跳入/出 code cache 執行之前/後，要執行 prologue/epilogue，請見 code_gen_prologue (exec.c)。這邊的 prologue/epilogue 就是指 function prologue/epilogue。QEMU 將跳至 code cache (host binary) 執行的過程看成是函式呼叫，故有此 prologue/epilogue。
+
 以 qemu-i386 為例，流程大致如下:
 ```
 main (linux-user/main.c) -> cpu_exec_init_all (exec.c)
@@ -74,9 +74,9 @@ main (linux-user/main.c) -> cpu_exec_init_all (exec.c)
 函式名之所以會出現 cpu_init/cpu_x86_init，是因為 QEMU 經常使用 #define 替換函式名。cpu_init 是 main 裡呼叫的函式，經 #define 替換後，實際上是 cpu_x86_init (target-i386/helper.c)。GDB 下斷點時請注意此種情況。
 
 這邊只介紹 tcg_prologue_init (tcg/tcg.c) -> cpu_loop (linux-user/main.c) 這一段，因為這一段跟 TCG 較為相關。容我先講 cpu_loop (linux-user/main.c)。
-```
-    cpu_loop (linux-user/main.c) -> cpu_x86_exec/cpu_exec (cpu-exec.c)。cpu_exec 是主要執行迴圈，其結構大致如下:
 
+- cpu_loop (linux-user/main.c) -> cpu_x86_exec/cpu_exec (cpu-exec.c)。cpu_exec 是主要執行迴圈，其結構大致如下:
+```
     /* prepare setjmp context for exception handling */
     for(;;) {
         if (setjmp(env->jmp_env) == 0) { // 例外處理。
@@ -91,7 +91,7 @@ main (linux-user/main.c) -> cpu_exec_init_all (exec.c)
         }
     }
 ```
-    tcg_prologue_init (tcg/tcg.c) -> tcg_target_qemu_prologue (tcg/i386/tcg-target.c)。如前所述，QEMU 將跳至 code cache (host binary) 執行的過程看成是函式呼叫。不同平台的 calling convention 各有不同，tcg_prologue_init 將產生 prologue/epilogue 的工作轉交 tcg_target_qemu_prologue。
+- tcg_prologue_init (tcg/tcg.c) -> tcg_target_qemu_prologue (tcg/i386/tcg-target.c)。如前所述，QEMU 將跳至 code cache (host binary) 執行的過程看成是函式呼叫。不同平台的 calling convention 各有不同，tcg_prologue_init 將產生 prologue/epilogue 的工作轉交 tcg_target_qemu_prologue。
 ```
     static void tcg_target_qemu_prologue(TCGContext *s)
     {
