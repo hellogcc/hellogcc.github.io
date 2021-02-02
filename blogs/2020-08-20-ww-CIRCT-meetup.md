@@ -19,23 +19,25 @@ CIRCT 含义是 Circuit IR Compilers and Tools，可以从仓库README看到建�
     韩博阳 – Introduction to FIRRTL
     自由讨论环节
 
-**张洪滨 – MLIR及其编译过程与应用分享**
+_**张洪滨 – MLIR及其编译过程与应用分享**_
 
 分享MLIR的背景及其编译过程(MLIR Toy Tutorial)，分享MLIR在CIRCT中的应用。
 
 演讲者张洪滨来自中科院软件所智能软件研究中心PLCT实验室。MLIR社区参与者、贡献者。
 
-**韩博阳 – Introduction to FIRRTL**
+_**韩博阳 – Introduction to FIRRTL**_
 
 分享 FIRRTL 编译器的安装，FIRRTL Spec简介，FIRRTL 编译器原理简介。
 
 分享者韩博阳来自厦门大学，主要研究方向为计算机体系结构安全性及EDA工具。
+
 **直播观看**
 
 （永久地址，可收藏）
 https://live.bilibili.com/10339607
 
 不需要报名，直接看。弹幕提问需要登录。
+
 **视频会议参会**
 
 会议主题：OSDT讨论会CIRCT主题
