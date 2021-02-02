@@ -8,13 +8,19 @@ Hi all，
 OSDT社区7月5日的 LLVM + RISC-V 线上讨论会视频已经通过审核，可以在B站和油管观看。
 
 王萌 – Spike模拟器Snapshot功能技术方案及实现分享
+
 Meng Wang – implement snapshot feature for Spike RISC-V simulator
+
 https://www.youtube.com/watch?v=t5cLOHd4uRs
+
 https://www.bilibili.com/video/BV1Lz411v7fg
 
 MaskRay – Clang 的 gcov 实现
+
 MaskRay – GCov implementations in Clang
+
 https://www.youtube.com/watch?v=iivFv90CQbI
+
 https://www.bilibili.com/video/BV1DT4y1J7fQ
 
 蒙斌 – VxWorks on RISC-V: 切换 LLVM 编译器遇到的一些问题分享
