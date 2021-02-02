@@ -58,11 +58,13 @@ https://meeting.tencent.com/s/HyoQXKb69HhK
 根据您的位置拨号
 +8675536550000 (中国大陆)
 +85230018898 (中国香港)
+
 **演讲报名**
 
 目前仍可以进行闪电演讲，请联系OSDT社区负责人吴伟报名。直接负责人微信报名或通过 lazyparser at gmail.com 后台留言。
 https://github.com/hellogcc/osdt-weekly/blob/master/images/hellogcc-wuwei.jpeg
-CFP call for proposals
+
+**CFP call for proposals**
 
 近日，Chris Lattner 带领的 CIRCT 项目已经开源并交给了 LLVM Foundation 托管。
 
