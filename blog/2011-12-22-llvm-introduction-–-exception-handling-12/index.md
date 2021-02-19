@@ -1,0 +1,119 @@
+---
+title: "LLVM Introduction – Exception Handling 1/2"
+date: "2011-12-22"
+categories: 
+  - "llvm"
+---
+
+Copyright (c) 2011 陳韋任 (Chen Wei-Ren)
+
+LLVM 3.0 其中一個較大的改動是重新設計和改寫對例外處理 (exception handling) 的支援。新的异常处理机制增加數條 LLVM (原生，first-class) 指令，並新增/移除數條 LLVM intrinsic 函式。如果想要擴展 LLVM，通常的建議是先增加 intrinsic 函式。在經過一段時間確認該擴展有必要加入 LLVM 原生支援，才會新增 LLVM IR。這是因為新增 LLVM IR 需要對 LLVM 整套框架做較大的修改。\[1\] 本篇文章主要以 Duncan Sands 今年在英國舉辦的 2011 European User Group Meeting 投影片 \[2\] 作為例子說明 LLVM IR 對例外處理的支援。
+
+程式語言中的例外處理主要是針對程式中極少發生的例外狀況提供處理機制。因此理想上，例外處理不應該對程式中正常流程造成任何影響，這是所謂的 zero-cost exception handling。目前所見的例外處理，其實作上基本遵循 [Itanium C++ ABI: Exception Handling](http://www.codesourcery.com/cxx-abi/abi-eh.html)。[The new LLVM exception handling scheme](http://llvm.org/devmtg/2011-09-16/EuroLLVM2011-ExceptionHandling.pdf) 這份投影片是展示如何將 C++ 例外處理的語法對映至 LLVM IR。
+
+底下是很典型的 C++ try/catch 述句。
+
+try {
+    ...
+    MayThrowSomething();
+    AnotherFunctionCall();
+    ...
+} catch (int i) {
+    DoSomethingWithInt(i);
+} catch (class A a) {
+    DoSomethingWithA(a);
+}
+
+如果函式 MayThrowSomething 丟出例外，會依序匹配 catch clause 看是否符合該例外的型別。如果都不匹配，則會做 [stack unwinding](http://en.wikipedia.org/wiki/Call_stack#Unwinding)，清空發生例外的函式其堆疊並將該例外傳遞給 caller 繼續處理該例外。針對 try 區塊中的函式呼叫，或是會丟出例外的函式其中的函式呼叫都改用 invoke 而非 call。所以 “MayThrowSomething()” 相對映的 LLVM IR 如下:
+
+  invoke void @\_Z17MayThrowSomethingv() to label %cont unwind label %lpad
+
+根據例外是否發生，執行流程會跳到 %cont 區塊或是 %lpad 區塊。這裡的重點在於負責例外處理的 %lpad。在例外處理中，有個名詞叫 “landingpad”，中文譯名為停機坪。之所以稱為 landingpad，是因為當例外發生時，執行流程會跳轉到這裡做一些準備，再轉發到其它地方。我們來看一下 %lpad 的內容。
+
+lpad:
+  %info = landingpad { i8\*, i32 } personality @\_\_gxx\_personality\_v0 catch @\_ZTIi %catch @\_ZTl1A
+  %except = extractvalue { i8\*, i32 } %info, 0
+  %selector = extractvalue { i8\*, i32 } %info, 1
+  %typeid = call i32 @llvm.eh.typeid.for(@\_ZTIi)
+  %match = icmp eq i32 %selector, %typeid
+  br i1 %match, label %run\_catch, label %try\_next
+
+我們先看第一道指令:
+
+%info = landingpad { i8\*, i32 } personality @\_\_gxx\_personality\_v0 catch @\_ZTIi %catch @\_ZTl1A
+
+在 Itanium C++ ABI: Exception Handling 中定義所謂的 personality routine。它是語言執行時期函示庫中的函式，用來作為 system unwind library 和 language-specific  
+exception handling semantics 的介面，這是因為不同的程式語言對於例外處理有不同的行為。landingpad 這條 LLVM IR 負責透過 personality routine 取得例外型別和其它資訊，在 C++ 中，該 routine 稱為 \_\_gxx\_personality\_v0。
+
+{ i8\*, i32 } 是 %info 的型別，分別是指向 exception structure 的指針和 selector value。這在 LLVM 型別系統中是一個 struct type，LLVM 3.0 另一項重大修改就是它的型別系統。landingpad 最後列出所有的 catch clause。目前 LLVM 的設計會列出 nest try 中所有的 catch clause，請見 \[2\] 第 29 頁。
+
+接著用 extractvalue 從 %info 中分別取出指向 exception structure 的指針和 selector value。
+
+%except = extractvalue { i8\*, i32 } %info, 0
+%selector = extractvalue { i8\*, i32 } %info, 1
+
+llvm.eh.typeid.for 是負責例外處理的 intrinsic 函式，它是用來將 catch clause 內的型別 (@\_ZTIi) 對映成 selector value (%typeid)，
+
+%typeid = call i32 @llvm.eh.typeid.for(@\_ZTIi)
+
+接著比較例外和 catch clause 的 selector value 是否一致。
+
+%match = icmp eq i32 %selector, %typeid
+
+如果匹配成功，表示由該 catch clause 處理該例外，跳至 %run\_catch 區塊; 否則跳至 %try\_next 繼續下一次的匹配。
+
+br i1 %match, label %run\_catch, label %try\_next
+
+這邊提一下 personality routine，在 C++ 稱為 \_\_gxx\_personality\_v0。它知道如何進行 catch clause 的匹配，因為這需要比較 C++ 的型別。@\_ZTIi 和 @\_ZTI1A 分別是語言特定的全域變數，在此是 C++，分別代表 int 和 class A 兩個型別的型別資訊 (typeinfo)。
+
+我們先來看 %run\_catch 區塊。
+
+run\_catch:
+%thrown = call i8\* @\_\_cxa\_begin\_catch(%except)
+%tmp = bitcast i8\* %thrown to i32\*
+%i = load i32\* %tmp
+call void @\_Z18DoSomethingWithInti(i32 %i)
+call void @\_\_cxa\_end\_catch()
+br label %finished
+
+它對映的是 catch (int i) 裡面的代碼。其中，
+
+%thrown = call i8\* @\_\_cxa\_begin\_catch(%except)
+call void @\_\_cxa\_end\_catch()
+
+分別是語言特定的函式呼叫。還記得之前我們從 %info 取出 exception structure 的指針並賦值給 %except 嗎? \_\_cxa\_begin\_catch 透過該指針取回 exception structure (仍然是指針)，此外它還額外做了一些事。\_\_cxa\_end\_catch 則是做一些清除的工作。這部分詳細內容請見 \[5\]，這是 LLVM 實現 C++ runtime 的子計畫。
+
+以下三條指令是將 i8\* 轉型成 i32\*，把 i32\* 所指內存的內容讀出，最後傳給 catch(int i) 中的 DoSomethingWithInt 函式 (\_Z18DoSomethingWithInti)。
+
+%tmp = bitcast i8\* %thrown to i32\*
+%i = load i32\* %tmp
+call void @\_Z18DoSomethingWithInti(i32 %i)
+
+最後跳至 %finished 區塊，完成例外處理。
+
+br label %finished
+
+如果該例外不匹配 catch (int i)，則會跳至 %try\_next 進行下一次匹配。
+
+try\_next:
+%typeid2 = call i32 @llvm.eh.typeid.for(@\_ZTI1A)
+%match2 = icmp eq i32 %selector, %typeid2
+br i1 %match2, label %run\_catch2, label %end
+
+這裡的重點在於，如果當前丟出例外的函式其 catch clause 無法處理該例外，就會跳至 %end 做 stack unwinding。
+
+end:
+resume { i8\*, i32 } %info
+
+這裡小節一下目前提到有關例外處理的 LLVM IR 和 intrinsics。
+
+- invoke – 以 C++ 為例，在 try block 中的函式呼叫，或是在會丟出例外的函式中的函式呼叫，一律改用 invoke 而非 call。
+- landingpad – 負責取出例外的相關資訊以供後續處理，並列出所有 catch clause。它取代原本的 llvm.eh.exception 和 llvm.eh.selector intrinsic。
+- llvm.eh.typeid.for – 把 catch clause 內的型別對映成 selector value，以便將來跟例外的 selector value 做比較。
+- resume – 如果例外無法被目前函式處理，做 stack unwinding 並將該例外傳遞至 caller。它取代原本的 llvm.eh.resume intrinsic。
+
+\[1\] http://llvm.org/docs/ExtendingLLVM.html  
+\[2\] http://llvm.org/devmtg/2011-09-16/EuroLLVM2011-ExceptionHandling.pdf  
+\[3\] http://www.codesourcery.com/cxx-abi/abi-eh.html  
+\[4\] http://en.wikipedia.org/wiki/Call\_stack#Unwinding  
+\[5\] http://libcxxabi.llvm.org/spec.html

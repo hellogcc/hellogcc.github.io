@@ -2,445 +2,157 @@
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
 
-[blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
-
-
-[blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call](blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call.html)
-
-
-[blogs/2011-06-28-qiyao-gdb-porting](blogs/2011-06-28-qiyao-gdb-porting.html)
-
-
-[blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development-2](blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development-2.html)
-
-
-[blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development](blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development.html)
-
-
-[blogs/2011-06-28-xmj-GFDL-vs-GPL](blogs/2011-06-28-xmj-GFDL-vs-GPL.html)
-
-
-[blogs/2011-06-28-xmj-open-source-conf-notes](blogs/2011-06-28-xmj-open-source-conf-notes.html)
-
-
-[blogs/2011-07-06-jialiu-get-old-code-using-git-svn](blogs/2011-07-06-jialiu-get-old-code-using-git-svn.html)
-
-
-[blogs/2011-07-06-jialiu-maintainer-community](blogs/2011-07-06-jialiu-maintainer-community.html)
-
-
-[blogs/2011-08-03-qiyao-debugger-signal-trampoline-frame](blogs/2011-08-03-qiyao-debugger-signal-trampoline-frame.html)
-
-
-[blogs/2011-08-19-qiyao-dejagnu](blogs/2011-08-19-qiyao-dejagnu.html)
-
-
-[blogs/2011-08-28-xmj-relocation](blogs/2011-08-28-xmj-relocation.html)
-
-
-[blogs/2011-09-08-admin-hellogcc-workshop-2011](blogs/2011-09-08-admin-hellogcc-workshop-2011.html)
-
-
-[blogs/2011-09-20-qiyao-notes-on-toolchain-embedded-build-or-buy](blogs/2011-09-20-qiyao-notes-on-toolchain-embedded-build-or-buy.html)
-
-
-[blogs/2011-09-25-xmj-tips-preprocessor-p-option](blogs/2011-09-25-xmj-tips-preprocessor-p-option.html)
-
-
-[blogs/2011-09-30-qiyao-hellogcc-workshop-notes](blogs/2011-09-30-qiyao-hellogcc-workshop-notes.html)
-
-
-[blogs/2011-10-08-xmj-func-decl-is-important](blogs/2011-10-08-xmj-func-decl-is-important.html)
-
-
-[blogs/2011-10-09-chenwj-qemu-tcg-1](blogs/2011-10-09-chenwj-qemu-tcg-1.html)
-
-
-[blogs/2011-10-09-chenwj-qemu-tcg-2](blogs/2011-10-09-chenwj-qemu-tcg-2.html)
-
-
-[blogs/2011-10-14-chenwj-qemu-block-chaining-1](blogs/2011-10-14-chenwj-qemu-block-chaining-1.html)
-
-
-[blogs/2011-10-14-chenwj-qemu-block-chaining-2](blogs/2011-10-14-chenwj-qemu-block-chaining-2.html)
-
-
-[blogs/2011-10-14-chenwj-qemu-block-chaining-3](blogs/2011-10-14-chenwj-qemu-block-chaining-3.html)
-
-
-[blogs/2011-10-19-qiyao-gdb-change-vcs](blogs/2011-10-19-qiyao-gdb-change-vcs.html)
-
-
-[blogs/2011-10-25-chenwj-llvm-introduction-jit-1](blogs/2011-10-25-chenwj-llvm-introduction-jit-1.html)
-
-
-[blogs/2011-10-25-chenwj-llvm-introduction-jit-2](blogs/2011-10-25-chenwj-llvm-introduction-jit-2.html)
-
-
-[blogs/2011-10-25-chenwj-llvm-introduction-jit-3](blogs/2011-10-25-chenwj-llvm-introduction-jit-3.html)
-
-
-[blogs/2011-11-03-qiyao-statistics-of-gdb-commits](blogs/2011-11-03-qiyao-statistics-of-gdb-commits.html)
-
-
-[blogs/2011-11-11-xmj-initfini-code](blogs/2011-11-11-xmj-initfini-code.html)
-
-
-[blogs/2011-11-16-admin-hellogcc2011-1-gcc-backend](blogs/2011-11-16-admin-hellogcc2011-1-gcc-backend.html)
-
-
-[blogs/2011-11-25-xmj-irc-notes](blogs/2011-11-25-xmj-irc-notes.html)
-
-
-[blogs/2011-12-04-chenwj-llvm-devmtg2011-1](blogs/2011-12-04-chenwj-llvm-devmtg2011-1.html)
-
-
-[blogs/2011-12-04-chenwj-llvm-devmtg2011-2](blogs/2011-12-04-chenwj-llvm-devmtg2011-2.html)
-
-
-[blogs/2011-12-04-chenwj-llvm-devmtg2011-3](blogs/2011-12-04-chenwj-llvm-devmtg2011-3.html)
-
-
-[blogs/2011-12-04-chenwj-llvm-devmtg2011-4](blogs/2011-12-04-chenwj-llvm-devmtg2011-4.html)
-
-
-[blogs/2011-12-08-xmj-force-link-func](blogs/2011-12-08-xmj-force-link-func.html)
-
-
-[blogs/2011-12-15-xmj-ld-wrap-symbol](blogs/2011-12-15-xmj-ld-wrap-symbol.html)
-
-
-[blogs/2011-12-22-chenwj-llvm-exception-handling-1](blogs/2011-12-22-chenwj-llvm-exception-handling-1.html)
-
-
-[blogs/2011-12-22-chenwj-llvm-exception-handling-2](blogs/2011-12-22-chenwj-llvm-exception-handling-2.html)
-
-
-[blogs/2012-01-08-qiyao-displaced-stepping-and-thumb2](blogs/2012-01-08-qiyao-displaced-stepping-and-thumb2.html)
-
-
-[blogs/2012-01-17-xmj-stamp-file](blogs/2012-01-17-xmj-stamp-file.html)
-
-
-[blogs/2012-02-18-qiyao-lldb](blogs/2012-02-18-qiyao-lldb.html)
-
-
-[blogs/2012-03-08-chenwj-example-func-decl-importance](blogs/2012-03-08-chenwj-example-func-decl-importance.html)
-
-
-[blogs/2012-03-09-chenwj-julia](blogs/2012-03-09-chenwj-julia.html)
-
-
-[blogs/2012-03-15-chenwj-qemu-precise-exception-handling-1](blogs/2012-03-15-chenwj-qemu-precise-exception-handling-1.html)
-
-
-[blogs/2012-03-15-chenwj-qemu-precise-exception-handling-2](blogs/2012-03-15-chenwj-qemu-precise-exception-handling-2.html)
-
-
-[blogs/2012-03-15-chenwj-qemu-precise-exception-handling-3](blogs/2012-03-15-chenwj-qemu-precise-exception-handling-3.html)
-
-
-[blogs/2012-03-15-chenwj-qemu-precise-exception-handling-4](blogs/2012-03-15-chenwj-qemu-precise-exception-handling-4.html)
-
-
-[blogs/2012-03-15-chenwj-qemu-precise-exception-handling-5](blogs/2012-03-15-chenwj-qemu-precise-exception-handling-5.html)
-
-
-[blogs/2012-05-06-qiyao-ITSET](blogs/2012-05-06-qiyao-ITSET.html)
-
-
-[blogs/2012-05-15-xmj-PLT](blogs/2012-05-15-xmj-PLT.html)
-
-
-[blogs/2012-05-15-xmj-with-abi-with-arch](blogs/2012-05-15-xmj-with-abi-with-arch.html)
-
-
-[blogs/2012-07-10-xmj-7th-os-forum-notes](blogs/2012-07-10-xmj-7th-os-forum-notes.html)
-
-
-[blogs/2012-07-17-xmj-restore-blog-from-google-reader](blogs/2012-07-17-xmj-restore-blog-from-google-reader.html)
-
-
-[blogs/2012-08-13-qiyao-gnu-cauldron-1](blogs/2012-08-13-qiyao-gnu-cauldron-1.html)
-
-
-[blogs/2012-08-22-xmj-gcc-configure_ac](blogs/2012-08-22-xmj-gcc-configure_ac.html)
-
-
-[blogs/2012-08-23-chenwj-llvm-3_1-testing](blogs/2012-08-23-chenwj-llvm-3_1-testing.html)
-
-
-[blogs/2012-09-10-qiyao-gnu-cauldron-4](blogs/2012-09-10-qiyao-gnu-cauldron-4.html)
-
-
-[blogs/2012-09-11-qiyao-ec-expect-has-triple-op](blogs/2012-09-11-qiyao-ec-expect-has-triple-op.html)
-
-
-[blogs/2012-09-27-qiyao-git-cvsexportcommit](blogs/2012-09-27-qiyao-git-cvsexportcommit.html)
-
-
-[blogs/2012-09-28-xmj-hellogcc2012-notice](blogs/2012-09-28-xmj-hellogcc2012-notice.html)
-
-
-[blogs/2012-09-30-gnu-cauldron-2](blogs/2012-09-30-gnu-cauldron-2.html)
-
-
-[blogs/2012-09-30-gnu-cauldron-3](blogs/2012-09-30-gnu-cauldron-3.html)
-
-
-[blogs/2012-10-14-qiyao-RFA-RFC](blogs/2012-10-14-qiyao-RFA-RFC.html)
-
-
-[blogs/2012-10-31-qiyao-gnu-coding-standard](blogs/2012-10-31-qiyao-gnu-coding-standard.html)
-
-
-[blogs/2012-11-14-qiyao-hellogcc-slides](blogs/2012-11-14-qiyao-hellogcc-slides.html)
-
-
-[blogs/2012-11-21-qiyao-hellogcc2012-gdb-porting](blogs/2012-11-21-qiyao-hellogcc2012-gdb-porting.html)
-
-
-[blogs/2012-11-25-qiyao-gcc-sort-history](blogs/2012-11-25-qiyao-gcc-sort-history.html)
-
-
-[blogs/2012-11-28-teawater-hellogcc2012-yangyongyong](blogs/2012-11-28-teawater-hellogcc2012-yangyongyong.html)
-
-
-[blogs/2013-01-05-qiyao-gnu-hacker-photos](blogs/2013-01-05-qiyao-gnu-hacker-photos.html)
-
-
-[blogs/2013-01-25-xmj-libgcc1-vs-libgcc2](blogs/2013-01-25-xmj-libgcc1-vs-libgcc2.html)
-
-
-[blogs/2013-02-14-qiyao-gcc-irc](blogs/2013-02-14-qiyao-gcc-irc.html)
-
-
-[blogs/2013-05-09-qiyao-lldb-different](blogs/2013-05-09-qiyao-lldb-different.html)
-
-
-[blogs/2013-05-24-qiyao-llvm-new-things](blogs/2013-05-24-qiyao-llvm-new-things.html)
-
-
-[blogs/2013-06-04-xmj-compilation-courses](blogs/2013-06-04-xmj-compilation-courses.html)
-
-
-[blogs/2013-06-17-qiyao-gdb-python-warning](blogs/2013-06-17-qiyao-gdb-python-warning.html)
-
-
-[blogs/2013-07-19-qiyao-gnu-cauldron-2013](blogs/2013-07-19-qiyao-gnu-cauldron-2013.html)
-
-
-[blogs/2013-07-30-xmj-hellogcc2013-cfp](blogs/2013-07-30-xmj-hellogcc2013-cfp.html)
-
-
-[blogs/2013-08-09-qiyao-gdb-move-to-cpp](blogs/2013-08-09-qiyao-gdb-move-to-cpp.html)
-
-
-[blogs/2013-09-29-xmj-gdb-pretty-printer-go-dist](blogs/2013-09-29-xmj-gdb-pretty-printer-go-dist.html)
-
-
-[blogs/2013-10-18-xmj-hellogcc2013-notice](blogs/2013-10-18-xmj-hellogcc2013-notice.html)
-
-
-[blogs/2013-11-18-teawater-hellogcc2013-photos](blogs/2013-11-18-teawater-hellogcc2013-photos.html)
-
-
-[blogs/2013-11-20-teawater-hellogcc2013-slides](blogs/2013-11-20-teawater-hellogcc2013-slides.html)
-
-
-[blogs/2013-12-20-shining-clang-doc](blogs/2013-12-20-shining-clang-doc.html)
-
-
-[blogs/2013-12-23-teawater-cfp-cauldron-2014](blogs/2013-12-23-teawater-cfp-cauldron-2014.html)
-
-
-[blogs/2013-12-26-xmj-tips-notification](blogs/2013-12-26-xmj-tips-notification.html)
-
-
-[blogs/2014-01-10-shining-clang-translation-overview](blogs/2014-01-10-shining-clang-translation-overview.html)
-
-
-[blogs/2014-01-26-teawater-hellogcc2013-videos](blogs/2014-01-26-teawater-hellogcc2013-videos.html)
-
-
-[blogs/2014-02-13-qiyao-gdb-talk-fosdem-2014](blogs/2014-02-13-qiyao-gdb-talk-fosdem-2014.html)
-
-
-[blogs/2014-02-17-xmj-effective-go-cn](blogs/2014-02-17-xmj-effective-go-cn.html)
-
-
-[blogs/2014-04-03-xmj-osdt2014-cfp](blogs/2014-04-03-xmj-osdt2014-cfp.html)
-
-
-[blogs/2014-04-18-shining-android-toolchain-llvm](blogs/2014-04-18-shining-android-toolchain-llvm.html)
-
-
-[blogs/2014-04-24-OSDT2014-cfp-sponsorships](blogs/2014-04-24-OSDT2014-cfp-sponsorships.html)
-
-
-[blogs/2014-05-12-xnanxiao-solaris-64bit-C-dev-env](blogs/2014-05-12-xnanxiao-solaris-64bit-C-dev-env.html)
-
-
-[blogs/2014-05-16-shining-clang-libclang](blogs/2014-05-16-shining-clang-libclang.html)
-
-
-[blogs/2014-05-26-nanxiao-articles-gcc-gdb](blogs/2014-05-26-nanxiao-articles-gcc-gdb.html)
-
-
-[blogs/2014-05-30-xmj-side-effect-analysis-in-llvm](blogs/2014-05-30-xmj-side-effect-analysis-in-llvm.html)
-
-
-[blogs/2014-06-01-nanxiao-gdb-tips-silent-quit](blogs/2014-06-01-nanxiao-gdb-tips-silent-quit.html)
-
-
-[blogs/2014-06-05-xmj-100-gdb-tips](blogs/2014-06-05-xmj-100-gdb-tips.html)
-
-
-[blogs/2014-07-02-nanxiao-gdb-scripts](blogs/2014-07-02-nanxiao-gdb-scripts.html)
-
-
-[blogs/2014-08-03-nanxiao-gdb-clean-build](blogs/2014-08-03-nanxiao-gdb-clean-build.html)
-
-
-[blogs/2014-08-18-xmj-OSDT2014-program](blogs/2014-08-18-xmj-OSDT2014-program.html)
-
-
-[blogs/2014-09-14-nanxiao-analysis-error-conflicting-types](blogs/2014-09-14-nanxiao-analysis-error-conflicting-types.html)
-
-
-[blogs/2014-09-14-nanxiao-gcc-64-solaris-32](blogs/2014-09-14-nanxiao-gcc-64-solaris-32.html)
-
-
-[blogs/2014-09-14-teawater-OSDT2014-notes](blogs/2014-09-14-teawater-OSDT2014-notes.html)
-
-
-[blogs/2014-09-25-nanxiao-gnu-mailinglist-plaintext](blogs/2014-09-25-nanxiao-gnu-mailinglist-plaintext.html)
-
-
-[blogs/2014-09-26-nanxiao-gcc-fpack-struct-core](blogs/2014-09-26-nanxiao-gcc-fpack-struct-core.html)
-
-
-[blogs/2014-10-09-xmj-qiyao-the-first-gdb-global](blogs/2014-10-09-xmj-qiyao-the-first-gdb-global.html)
-
-
-[blogs/2014-10-10-nanxiao-solaris-ld_options](blogs/2014-10-10-nanxiao-solaris-ld_options.html)
-
-
-[blogs/2014-11-03-nanxiao-uninstall-gdb](blogs/2014-11-03-nanxiao-uninstall-gdb.html)
-
-
-[blogs/2014-12-11-xmj-quick-install-gcc](blogs/2014-12-11-xmj-quick-install-gcc.html)
-
-
-[blogs/2014-12-15-xmj-tips-tracing-log](blogs/2014-12-15-xmj-tips-tracing-log.html)
-
-
-[blogs/2014-12-30-xmj-git-shell-limit-ssh](blogs/2014-12-30-xmj-git-shell-limit-ssh.html)
-
-
-[blogs/2015-03-18-xmj](blogs/2015-03-18-xmj.html)
-
-
-[blogs/2015-04-13-xmj-C-side-effort](blogs/2015-04-13-xmj-C-side-effort.html)
-
-
-[blogs/2015-04-13-xmj-gdb-debug-gcc](blogs/2015-04-13-xmj-gdb-debug-gcc.html)
-
-
-[blogs/2015-05-04-xmj-OSDT2015-cfp](blogs/2015-05-04-xmj-OSDT2015-cfp.html)
-
-
-[blogs/2015-06-08-nanxiao-install-clang-centos-7](blogs/2015-06-08-nanxiao-install-clang-centos-7.html)
-
-
-[blogs/2015-06-11-nanxiao-fix-libelf_h-not-found](blogs/2015-06-11-nanxiao-fix-libelf_h-not-found.html)
-
-
-[blogs/2015-10-14-xmj-tips-dump-ast-to-file-clang](blogs/2015-10-14-xmj-tips-dump-ast-to-file-clang.html)
-
-
-[blogs/2015-10-23-xmj-OSDT2015](blogs/2015-10-23-xmj-OSDT2015.html)
-
-
-[blogs/2015-11-23-xmj-notes-on-OSDT2015](blogs/2015-11-23-xmj-notes-on-OSDT2015.html)
-
-
-[blogs/2015-11-25-ww-include_next](blogs/2015-11-25-ww-include_next.html)
-
-
-[blogs/2015-11-50-ww-linux-tracer-choose](blogs/2015-11-50-ww-linux-tracer-choose.html)
-
-
-[blogs/2015-12-01-xmj-perl-debugger](blogs/2015-12-01-xmj-perl-debugger.html)
-
-
-[blogs/2016-02-25-ww-opencas-gnu-mirros](blogs/2016-02-25-ww-opencas-gnu-mirros.html)
-
-
-[blogs/2016-05-04-xmj-loop-search](blogs/2016-05-04-xmj-loop-search.html)
-
-
-[blogs/2016-05-24-xmj-gen-tags-for-td](blogs/2016-05-24-xmj-gen-tags-for-td.html)
-
-
-[blogs/2016-06-02-xmj-gcc-6_1_0-SPEC2006](blogs/2016-06-02-xmj-gcc-6_1_0-SPEC2006.html)
-
-
-[blogs/2016-06-16-xmj-gcc-tags](blogs/2016-06-16-xmj-gcc-tags.html)
-
-
-[blogs/2016-07-15-xmj-gcc-4_8-debugging-issues](blogs/2016-07-15-xmj-gcc-4_8-debugging-issues.html)
-
-
-[blogs/2016-07-20-xmj-OSDT2016-cfp](blogs/2016-07-20-xmj-OSDT2016-cfp.html)
-
-
-[blogs/2016-10-10-xmj-OSDT2016](blogs/2016-10-10-xmj-OSDT2016.html)
-
-
-[blogs/2017-07-03-ww-OSDT2017-cfp](blogs/2017-07-03-ww-OSDT2017-cfp.html)
-
-
-[blogs/2017-09-29-ww-OSDT17-program](blogs/2017-09-29-ww-OSDT17-program.html)
-
-
-[blogs/2017-10-18-ww-OSDT17-letter](blogs/2017-10-18-ww-OSDT17-letter.html)
-
-
-[blogs/2018-07-18-ww-osdt2018](blogs/2018-07-18-ww-osdt2018.html)
-
-
-[blogs/2019-01-08-ww-nanjing-social](blogs/2019-01-08-ww-nanjing-social.html)
-
-
-[blogs/2019-09-18-ww-OSDT2019-cfp](blogs/2019-09-18-ww-OSDT2019-cfp.html)
-
-
-[blogs/2019-10-29-ww-OSDT19-program](blogs/2019-10-29-ww-OSDT19-program.html)
-
-
-[blogs/2020-05-20-ww-osdt-weekly-046](blogs/2020-05-20-ww-osdt-weekly-046.html)
-
-
-[blogs/2020-06-05-ww-V8-social](blogs/2020-06-05-ww-V8-social.html)
-
-
-[blogs/2020-07-04-ww-llvm-riscv-meetup](blogs/2020-07-04-ww-llvm-riscv-meetup.html)
-
-
-[blogs/2020-07-05-ww-video-of-online-meetup](blogs/2020-07-05-ww-video-of-online-meetup.html)
-
-
-[blogs/2020-08-20-ww-CIRCT-meetup](blogs/2020-08-20-ww-CIRCT-meetup.html)
-
-
-[blogs/2020-09-21-ww-OSDT2020-cfs](blogs/2020-09-21-ww-OSDT2020-cfs.html)
-
-
-[blogs/2020-09-21-ww-osdt-slack](blogs/2020-09-21-ww-osdt-slack.html)
-
-
-[blogs/2020-10-03-ww-OSDT2020-CFP](blogs/2020-10-03-ww-OSDT2020-CFP.html)
-
-
-[blogs/2020-12-02-ww-OSDT2020-program](blogs/2020-12-02-ww-OSDT2020-program.html)
+- [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.md)
+- [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.md)
+- [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.md)
+- [2020-09-21 : OSDT大会2020开始筹备，欢迎赞助](blog/2020-09-21-osdt大会2020开始筹备，欢迎赞助/index.md)
+- [2020-08-20 : OSDT 线上技术交流会 CIRCT 专场](blog/2020-08-20-osdt-线上技术交流会-circt-专场/index.md)
+- [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
+- [2020-07-04 : LLVM + RISC-V 技术讨论会 2020-07-05](blog/2020-07-04-llvm-risc-v-技术讨论会-2020-07-05/index.md)
+- [2020-06-05 : V8 线上技术讨论会 2020-06-07](blog/2020-06-05-v8-线上技术讨论会-2020-06-07/index.md)
+- [2020-05-20 : OSDT Weekly 2020-05-20 第046期](blog/2020-05-20-osdt-weekly-2020-05-20-第046期/index.md)
+- [2020-05-15 : QEMU 线上技术讨论会 2020-05-17](blog/2020-05-15-qemu-线上技术讨论会-2020-05-17/index.md)
+- [2020-05-14 : OSDT Weekly 2020-05-13 第045期](blog/2020-05-14-osdt-weekly-2020-05-13-第045期/index.md)
+- [2019-10-29 : 开源开发工具大会OSDT19议程确定，11月9日下午见！（文末报名）](blog/2019-10-29-开源开发工具大会osdt19议程确定，11月9日下午见！（文/index.md)
+- [2019-09-18 : OSDT 2019 征集演讲](blog/2019-09-18-osdt-workshop-2019-开始征集演讲话题/index.md)
+- [2019-01-08 : LLVM/GCC social in Nanjing China: Jan 19, 2019](blog/2019-01-08-llvm-gcc-social-in-nanjing-china-jan-19-2019/index.md)
+- [2018-07-18 : OSDT2018 Call for Talks](blog/2018-07-18-osdt2018-call-for-talks/index.md)
+- [2017-10-18 : OSDT17邀请函](blog/2017-10-18-osdt17邀请函/index.md)
+- [2017-09-29 : 这些演讲厉害了！OSDT17议程介绍](blog/2017-09-29-这些演讲厉害了！osdt17议程介绍/index.md)
+- [2017-09-20 : 2017开源开发工具大会](blog/2017-09-20-2017开源开发工具大会/index.md)
+- [2017-07-03 : OSDT开源开发工具大会2017话题和赞助征集](blog/2017-07-03-osdt开源开发工具大会2017话题和赞助征集/index.md)
+- [2016-10-10 : 2016开源开发工具大会](blog/2016-10-10-2016开源开发工具大会/index.md)
+- [2016-07-20 : 开源开发工具大会2016话题和赞助征集](blog/2016-07-20-开源开发工具大会2016话题和赞助征集/index.md)
+- [2016-07-15 : GCC 4.8之后的调试问题](blog/2016-07-15-gcc-4-8之后的调试问题/index.md)
+- [2016-06-16 : 为gcc源代码生成tags](blog/2016-06-16-为gcc的def文件生成tags/index.md)
+- [2016-06-02 : 使用gcc-6.1.0编译SPEC2006错误参考](blog/2016-06-02-使用gcc-6-1-0编译spec2006错误参考/index.md)
+- [2016-05-24 : 为td文件生成tags](blog/2016-05-24-为td文件生成tags/index.md)
+- [2016-05-04 : 回路搜索算法](blog/2016-05-04-回路搜索算法/index.md)
+- [2016-02-25 : [资源] 中科院开源协会的GCC等GNU软件镜像站点上线](blog/2016-02-25-资源-中科院开源协会的gcc等gnu软件镜像站点上线/index.md)
+- [2015-12-01 : 像使用gdb一样，使用perl debugger进行调试](blog/2015-12-01-像使用gdb一样，使用perl-debugger进行调试/index.md)
+- [2015-11-30 : Linux下那么多Tracer如何选择](blog/2015-11-30-linux下那么多tracer如何选择/index.md)
+- [2015-11-25 : '#include_next' 的用途](blog/2015-11-25-include_next-的用途/index.md)
+- [2015-11-23 : OSDT 2015随笔](blog/2015-11-23-osdt-2015随笔/index.md)
+- [2015-10-23 : 2015开源开发工具大会](blog/2015-10-23-2015开源开发工具大会/index.md)
+- [2015-10-14 : [clang] 小技巧：将AST Dump到文件中](blog/2015-10-14-clang-小技巧：将ast-dump到文件中/index.md)
+- [2015-06-11 : 解决编译错误“fatal error: 'libelf.h' file not found”](blog/2015-06-11-解决编译错误fatal-error-libelf-h-file-not-found/index.md)
+- [2015-06-08 : 在CentOS 7上安装clang](blog/2015-06-08-在centos-7上安装clang/index.md)
+- [2015-05-04 : 开源开发工具大会2015话题和赞助征集](blog/2015-05-04-开源开发工具大会2015话题和赞助征集/index.md)
+- [2015-04-13 : gdb无法调试最新gcc编译的程序](blog/2015-04-13-gdb无法调试最新gcc编译的程序/index.md)
+- [2015-04-13 : C语言的副作用](blog/2015-04-13-c语言的副作用/index.md)
+- [2015-03-18 : clang小技巧：加快编译速度](blog/2015-03-18-llvm小技巧：make-only_toolsclang/index.md)
+- [2014-12-30 : 使用git-shell来限制用户ssh登陆](blog/2014-12-30-使用git-shell来限制用户ssh登陆/index.md)
+- [2014-12-15 : 小技巧：追溯历史开发信息](blog/2014-12-15-小技巧：追溯历史开发信息/index.md)
+- [2014-12-11 : 一键编译安装gcc](blog/2014-12-11-一键编译安装gcc/index.md)
+- [2014-11-03 : 如何卸载gdb？](blog/2014-11-03-如何卸载gdb？/index.md)
+- [2014-10-10 : 在Solaris上使用LD_OPTIONS环境变量诊断编译链接问题](blog/2014-10-10-在solaris上使用ld_options环境变量诊断编译链接问题/index.md)
+- [2014-10-09 : 祝贺齐尧成为国内首个gdb global maintainer](blog/2014-10-09-祝贺齐尧成为国内首个gdb-global-maintainer/index.md)
+- [2014-09-26 : gcc的 \-fpack-struct\ 编译选项导致程序core dump的分析](blog/2014-09-26-gcc的-fpack-struct-编译选项导致程序core-dump的分析/index.md)
+- [2014-09-25 : 往GNU邮件组发邮件要用纯文本格式](blog/2014-09-25-往gnu邮件组发邮件要用纯文本格式/index.md)
+- [2014-09-14 : 关于\error conflicting types for function\编译错误的分析](blog/2014-09-14-关于error-conflicting-types-for-function编译错误的分析/index.md)
+- [2014-09-14 : 为什么gcc在64位Solaris上编译出来的程序默认是32位的？](blog/2014-09-14-为什么gcc在64位solaris上编译出来的程序默认是32位的？/index.md)
+- [2014-09-14 : 2014开源开发工具大会见闻录](blog/2014-09-14-2014开源开发工具大会见闻录/index.md)
+- [2014-08-18 : 2014开源开发工具大会（原HelloGCC技术讨论会）](blog/2014-08-18-2014开源开发工具大会-活动通知/index.md)
+- [2014-08-03 : 编译gdb注意事项：一定要用一个干净的build文件夹](blog/2014-08-03-编译gdb注意事项：一定要用一个干净的build文件夹/index.md)
+- [2014-07-02 : 如何写gdb命令脚本](blog/2014-07-02-如何写gdb命令脚本/index.md)
+- [2014-06-05 : 100个gdb小技巧](blog/2014-06-05-100个gdb小技巧/index.md)
+- [2014-06-01 : 小技巧：gdb退出时不显示提示信息](blog/2014-06-01-小技巧：gdb退出时不显示提示信息/index.md)
+- [2014-05-30 : Side effect analysis in LLVM](blog/2014-05-30-side-effect-analysis-in-llvm/index.md)
+- [2014-05-26 : 分享几篇关于gcc和gdb的文章](blog/2014-05-26-分享几篇关于gcc和gdb的文章/index.md)
+- [2014-05-16 : Clang之libclang](blog/2014-05-16-clang之libclang/index.md)
+- [2014-05-12 : Solaris搭建64位C语言开发环境](blog/2014-05-12-solaris搭建64位c语言开发环境/index.md)
+- [2014-04-24 : Call for Topics and Sponsors -- Workshop on Open Source Development Tools 2014 (i.e. HelloGCC Workshop)](blog/2014-04-24-call-for-topics-and-sponsors-workshop-on-open-source-development-tools-2014-i-e-hellogcc-workshop/index.md)
+- [2014-04-18 : Android中编译工具链的改动----LLVM份量的增加](blog/2014-04-18-android中编译工具链的改动-llvm份量的增加/index.md)
+- [2014-04-03 : 开源开发工具大会2014（原HelloGCC技术讨论会）话题和赞助征集](blog/2014-04-03-开源开发工具大会2014（原hellogcc技术讨论会）话题和赞/index.md)
+- [2014-02-17 : Effective Go中文翻译](blog/2014-02-17-effective-go中文翻译/index.md)
+- [2014-02-13 : GDB talk in FOSDEM 2014 (slides and video record)](blog/2014-02-13-gdb-talk-in-fosdem-2014-slides-and-video-record/index.md)
+- [2014-01-26 : HelloGCC 2013技术讨论会录像](blog/2014-01-26-hellogcc-2013技术讨论会录像/index.md)
+- [2014-01-10 : Clang文档翻译---- Using Clang Tools----Overview](blog/2014-01-10-clang文档翻译-using-clang-tools-overview/index.md)
+- [2013-12-26 : 小技巧：编译时间太长，增加一个结束提示](blog/2013-12-26-小技巧：编译时间太长，增加一个结束提示/index.md)
+- [2013-12-22 : GNU Tools Cauldron 2014 开始征集话题了](blog/2013-12-22-gnu-tools-cauldron-2014-开始征集话题了/index.md)
+- [2013-12-20 : 翻译Clang文档：Choosing the Right Interface for Your Application](blog/2013-12-20-翻译clang文档：choosing-the-right-interface-for-your-application/index.md)
+- [2013-11-20 : HelloGCC 2013技术讨论会幻灯片](blog/2013-11-20-hellogcc-2013技术讨论会幻灯片/index.md)
+- [2013-11-17 : HelloGCC 2013技术讨论会活动照片记录](blog/2013-11-17-hellogcc-2013技术讨论会活动照片记录/index.md)
+- [2013-10-17 : HelloGCC 2013技术讨论会活动通知](blog/2013-10-17-hellogcc-2013技术讨论会活动通知/index.md)
+- [2013-09-29 : 使用gdb pretty printer调试go dist](blog/2013-09-29-使用gdb-pretty-printer调试go-dist/index.md)
+- [2013-08-09 : GDB tends to move to C++?](blog/2013-08-09-gdb-tends-to-move-to-c/index.md)
+- [2013-07-29 : HelloGCC 2013话题征集](blog/2013-07-29-hellogcc-2013话题征集/index.md)
+- [2013-07-18 : GNU Tools Cauldron 2013](blog/2013-07-18-gnu-tools-cauldron-2013/index.md)
+- [2013-06-17 : GDB python的一些奇怪警告](blog/2013-06-17-gdb-python的一些奇怪警告/index.md)
+- [2013-06-03 : 编译相关课件](blog/2013-06-03-编译相关课件/index.md)
+- [2013-05-24 : llvm 在尝试的一些新东西](blog/2013-05-24-llvm-在尝试的一些新东西/index.md)
+- [2013-05-08 : What LLDB does different from other typical debuggers](blog/2013-05-08-what-lldb-does-different-from-other-typical-debuggers/index.md)
+- [2013-04-14 : 我向GCC社区提交过的Patch](blog/2013-04-14-我向gcc社区提交过的patch/index.md)
+- [2013-02-14 : GCC IRC 上的一段对话](blog/2013-02-14-gcc-irc-上的一段对话/index.md)
+- [2013-01-25 : libgcc1和libgcc2的区别](blog/2013-01-25-libgcc1和libgcc2的区别/index.md)
+- [2013-01-05 : GNU hacker的一些照片](blog/2013-01-05-gnu-hacker的一些照片/index.md)
+- [2012-11-28 : HelloGCC 2012 视频 LLVM: Another Toolchain Platform](blog/2012-11-28-hellogcc-2012-视频-llvm-another-toolchain-platform/index.md)
+- [2012-11-23 : GCC 野史](blog/2012-11-23-gcc-野史/index.md)
+- [2012-11-20 : HelloGCC 2012 视频 Port GDB to a New Architecture](blog/2012-11-20-2012-workshop-视频/index.md)
+- [2012-11-13 : 11月10日workshop](blog/2012-11-13-11月10日workshop/index.md)
+- [2012-10-30 : GNU coding standard](blog/2012-10-30-gnu-coding-standard/index.md)
+- [2012-10-14 : RFA 和 RFC的缩写](blog/2012-10-14-rfa-和-rfc的缩写/index.md)
+- [2012-09-30 : GNU Tools Cauldron (4)](blog/2012-09-30-gnu-tools-cauldron-4/index.md)
+- [2012-09-30 : GNU Tools Cauldron (3)](blog/2012-09-30-gnu-tools-cauldron-3/index.md)
+- [2012-09-30 : GNU Tools Cauldron (2)](blog/2012-09-30-gnu-tools-cauldron-2/index.md)
+- [2012-09-27 : HelloGCC 2012 活动通知](blog/2012-09-27-hellogcc-2012-活动通知/index.md)
+- [2012-09-26 : 使用git cvsexportcommit来给cvs仓库提交代码](blog/2012-09-26-使用git-cvsexportcommit来给cvs仓库提交代码/index.md)
+- [2012-09-10 : ?: in tc/expect](blog/2012-09-10-in-tcexpect/index.md)
+- [2012-08-23 : LLVM 3.1 測試經驗談](blog/2012-08-23-llvm-3-1-測試經驗談/index.md)
+- [2012-08-22 : 简析gcc configure.ac](blog/2012-08-22-简析gcc-configure-ac/index.md)
+- [2012-08-13 : GNU Tools Cauldron (1)](blog/2012-08-13-gnu-tools-cauldron-1/index.md)
+- [2012-07-16 : Restore wordpress blog from Google Reader](blog/2012-07-16-restore-wordpress-blog-from-google-reader/index.md)
+- [2012-07-10 : 第七届开源论坛参会日志](blog/2012-07-10-第七届开源论坛参会日志/index.md)
+- [2012-05-14 : PLT实例讲解](blog/2012-05-14-plt实例讲解/index.md)
+- [2012-05-14 : GCC中–with-abi和–with-arch的实现分析](blog/2012-05-14-gcc中–with-abi和–with-arch的实现分析/index.md)
+- [2012-05-05 : ITSET的简单介绍](blog/2012-05-05-itset的简单介绍/index.md)
+- [2012-03-14 : QEMU Internal – Precise Exception Handling 5/5](blog/2012-03-14-qemu-internal-–-precise-exception-handling-55/index.md)
+- [2012-03-14 : QEMU Internal – Precise Exception Handling 4/5](blog/2012-03-14-qemu-internal-–-precise-exception-handling-45/index.md)
+- [2012-03-14 : QEMU Internal – Precise Exception Handling 3/5](blog/2012-03-14-qemu-internal-–-precise-exception-handling-35/index.md)
+- [2012-03-14 : QEMU Internal – Precise Exception Handling 2/5](blog/2012-03-14-qemu-internal-–-precise-exception-handling-25/index.md)
+- [2012-03-14 : QEMU Internal – Precise Exception Handling 1/5](blog/2012-03-14-qemu-internal-–-precise-exception-handling-15/index.md)
+- [2012-03-08 : [譯] Why We Created Julia](blog/2012-03-08-譯-why-we-created-julia/index.md)
+- [2012-03-08 : 小例子，函数声明的重要性 (續)](blog/2012-03-08-小例子，函数声明的重要性-續/index.md)
+- [2012-02-18 : lldb 的一小步 调试器的一大步](blog/2012-02-18-lldb-的一小步-调试器的一大步/index.md)
+- [2012-01-16 : 邮件列表解读之STAMP-FILE](blog/2012-01-16-邮件列表解读之stamp-file/index.md)
+- [2012-01-08 : HelloGCC 2011(3) 多核时代更快断点 — Displaced stepping以及对Thumb-2指令集的实现](blog/2012-01-08-hellogcc-20113-多核时代更快断点-—-displaced-stepping以及对thumb-2指令集的实/index.md)
+- [2011-12-22 : LLVM Introduction – Exception Handling 2/2](blog/2011-12-22-llvm-introduction-–-exception-handling-22/index.md)
+- [2011-12-22 : LLVM Introduction – Exception Handling 1/2](blog/2011-12-22-llvm-introduction-–-exception-handling-12/index.md)
+- [2011-12-14 : 有趣的选项 —— ld –wrap=symbol](blog/2011-12-14-有趣的选项-——-ld-–wrapsymbol/index.md)
+- [2011-12-08 : 强制链接一个函数](blog/2011-12-08-强制链接一个函数/index.md)
+- [2011-12-03 : 2011 LLVM Developers’ Meeting 4/4](blog/2011-12-03-2011-llvm-developers’-meeting-44/index.md)
+- [2011-12-03 : 2011 LLVM Developers’ Meeting 3/4](blog/2011-12-03-2011-llvm-developers’-meeting-34/index.md)
+- [2011-12-03 : 2011 LLVM Developers’ Meeting 2/4](blog/2011-12-03-2011-llvm-developers’-meeting-24/index.md)
+- [2011-12-03 : 2011 LLVM Developers’ Meeting 1/4](blog/2011-12-03-2011-llvm-developers’-meeting-14/index.md)
+- [2011-11-25 : IRC聊天随笔](blog/2011-11-25-irc聊天随笔/index.md)
+- [2011-11-16 : HelloGCC 2011(1) Introduction to GCC Backend](blog/2011-11-16-hellogcc-20111-introduction-to-gcc-backend/index.md)
+- [2011-11-10 : 有趣的代码——initfini.c](blog/2011-11-10-有趣的代码——initfini-c/index.md)
+- [2011-11-03 : Statistics of GDB Commits](blog/2011-11-03-statistics-of-gdb-commits/index.md)
+- [2011-11-03 : GDB Commits](blog/2011-11-03-gdb-commits/index.md)
+- [2011-10-25 : LLVM Introduction – How to use LLVM JIT 3/3](blog/2011-10-25-llvm-introduction-–-how-to-use-llvm-jit-33/index.md)
+- [2011-10-25 : LLVM Introduction – How to use LLVM JIT 2/3](blog/2011-10-25-llvm-introduction-–-how-to-use-llvm-jit-23/index.md)
+- [2011-10-25 : LLVM Introduction – How to use LLVM JIT 1/3](blog/2011-10-25-llvm-introduction-–-how-to-use-llvm-jit-13/index.md)
+- [2011-10-18 : 给GDB换一个版本控制工具](blog/2011-10-18-给gdb换一个版本控制工具/index.md)
+- [2011-10-14 : QEMU Internal – Block Chaining 3/3](blog/2011-10-14-qemu-internal-–-block-chaining-33/index.md)
+- [2011-10-14 : QEMU Internal – Block Chaining 2/3](blog/2011-10-14-qemu-internal-–-block-chaining-23/index.md)
+- [2011-10-14 : QEMU Internal – Block Chaining 1/3](blog/2011-10-14-qemu-internal-–-block-chaining-13/index.md)
+- [2011-10-09 : QEMU Internal – Tiny Code Generator (TCG) 2/2](blog/2011-10-09-qemu-internal-–-tiny-code-generator-tcg-22/index.md)
+- [2011-10-09 : QEMU Internal – Tiny Code Generator (TCG) 1/2](blog/2011-10-09-qemu-internal-–-tiny-code-generator-tcg-12/index.md)
+- [2011-10-08 : 小例子，函数声明的重要性](blog/2011-10-08-小例子，函数声明的重要性/index.md)
+- [2011-09-30 : HelloGCC 2011 Workshop 见闻](blog/2011-09-30-hellogcc-2011-workshop-见闻/index.md)
+- [2011-09-24 : 小技巧：使用预处理选项-P](blog/2011-09-24-小技巧：使用预处理选项-p/index.md)
+- [2011-09-19 : 读 “GNU Toolchain for Embedded Development: Build or Buy?“ 有感](blog/2011-09-19-读-“gnu-toolchain-for-embedded-development-build-or-buy“-有感/index.md)
+- [2011-09-08 : HelloGCC WorkShop 2011](blog/2011-09-08-hellogcc-workshop-2011/index.md)
+- [2011-08-28 : 一个关于重定位的例子](blog/2011-08-28-一个关于重定位的例子/index.md)
+- [2011-08-19 : gdb测试框架dejagnu的介绍](blog/2011-08-19-gdb测试框架dejagnu的介绍/index.md)
+- [2011-08-03 : Debugger Not In Depth: signal trampoline frame](blog/2011-08-03-debugger-not-in-depth-signal-trampoline-frame/index.md)
+- [2011-07-06 : 使用git-svn获取历史悠久的代码](blog/2011-07-06-使用git-svn获取历史悠久的代码/index.md)
+- [2011-07-06 : 从Lu申请maintainer被拒看什么是社区](blog/2011-07-06-从lu申请maintainer被拒看什么是社区/index.md)
+- [2011-06-29 : 开源大会之见闻](blog/2011-06-29-开源大会之见闻/index.md)
+- [2011-06-27 : Debugger Not In Depth: Inferior Call](blog/2011-06-27-debugger-not-in-depth-inferior-call/index.md)
+- [2011-06-21 : 查看struct gcc_target的定义](blog/2011-06-21-查看struct-gcc_target的定义/index.md)
+- [2011-06-18 : 由GFDL和GPL引出的问题](blog/2011-06-18-由gfdl和gpl引出的问题/index.md)
+- [2011-06-18 : 探索GDB的移植](blog/2011-06-18-探索gdb的移植/index.md)
+- [2011-06-18 : 开始加入gnu toolchain的开发（之二）](blog/2011-06-18-开始加入gnu-toolchain的开发（之二）/index.md)
+- [2011-06-18 : 开始加入gnu toolchain的开发](blog/2011-06-18-开始加入gnu-toolchain的开发/index.md)
+- [2011-06-18 : GNU Toolchain的起步工作 — 利用clang-analyzer分析gdb](blog/2011-06-18-gnu-toolchain的起步工作-—-利用clang-analyzer分析gdb/index.md)
