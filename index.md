@@ -1,11 +1,9 @@
 ## Welcome to OSDT Blog
 
-### 话题征集： OSDT Meetup 20210516 (online)
-
-[话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
-
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
 
+- [OSDT Conf 2021 开始征稿啦！][blog/2021-10-19-CFP-OSDT-Conf-2021.html]
+- [话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
 - [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.html)
 - [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.html)
 - [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.html)
