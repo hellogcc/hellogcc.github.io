@@ -2,6 +2,7 @@
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
 
+- [2月25日武汉，HelloGCC线下聚会重启！技术分享征集中](blog/2023-01-31-cfp-wuhan-meetup.md)
 - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.md)
 - [OSDT Conf 2021 开始征稿啦！](blog/2021-10-19-CFP-OSDT-Conf-2021.md)
 - [话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
