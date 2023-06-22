@@ -11,4 +11,4 @@ date: "2020-09-21"
 
 **吴伟 lazyparser@gmail.com**
 
-或直接通过微信联系，微信号： fangzhang1024 （请注明「OSDT赞助」以加速通过验证）
+或直接通过微信联系，微信号： lazyparser （请注明「OSDT赞助」以加速通过验证）
