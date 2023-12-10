@@ -1,5 +1,5 @@
 theme: jekyll-theme-slate
-title: 开源开发工具技术博客（OSDT Blog）
-description: OSDT = HelloGCC + HelloLLVM + ...
+title: 开源开发工具技术（OSDT）博客
+description: OSDT = HelloGCC + HelloLLVM
 markdown: kramdown
 url: "https://hellogcc.github.io"
