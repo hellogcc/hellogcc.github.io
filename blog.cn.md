@@ -1,3 +1,4 @@
+- [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
 - [OSDT Conf 2023 开始征稿啦！](2023/2023-12-10-OSDT-Conf-2023-cfp.md)
 - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
 - [OSDT Conf 2021 开始征稿啦！](blog/2021-10-19-CFP-OSDT-Conf-2021.html)
