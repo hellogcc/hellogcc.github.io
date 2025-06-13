@@ -2,6 +2,7 @@
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
 
+- [6月15日3PM，来聊聊首届AsiaLLVM开发者大会的见闻感受(线上腾讯会议)](https://mp.weixin.qq.com/s/4mR8IxlxFlB3VNzLGJGS1w)
 - [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
 - [OSDT Conf 2023 开始征稿啦！](2023/2023-12-10-OSDT-Conf-2023-cfp.md)
 - [4月22日，深圳聚会来啦！技术分享征集中](2023/2023-04-10-cfp-shenzhen-meetup.md)
