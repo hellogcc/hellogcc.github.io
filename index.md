@@ -1,7 +1,6 @@
 ## Welcome to OSDT Blog
 
-寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
-
+- [CFP:第17届开源开发工具大会（OSDTConf）演讲报名现已开始](2025/2025-11-09-OSDTConf2025-cfp.md)
 - [6月15日3PM，来聊聊首届AsiaLLVM开发者大会的见闻感受(线上腾讯会议)](https://mp.weixin.qq.com/s/4mR8IxlxFlB3VNzLGJGS1w)
 - [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
 - [OSDT Conf 2023 开始征稿啦！](2023/2023-12-10-OSDT-Conf-2023-cfp.md)
@@ -11,6 +10,8 @@
 - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.md)
 - [OSDT Conf 2021 开始征稿啦！](blog/2021-10-19-CFP-OSDT-Conf-2021.md)
 - [话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
+
+寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
 - [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.html)
 - [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.html)
 - [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.html)
