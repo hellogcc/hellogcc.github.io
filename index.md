@@ -1,5 +1,6 @@
 ## Welcome to OSDT Blog
 
+- [久违了：开源开发者Meetup计划于8月30日3PM举行](2026/2026-08-30-OSDT-Meetup.md)
 - [CFP:第17届开源开发工具大会（OSDTConf）演讲报名现已开始](2025/2025-11-09-OSDTConf2025-cfp.md)
 - [6月15日3PM，来聊聊首届AsiaLLVM开发者大会的见闻感受(线上腾讯会议)](https://mp.weixin.qq.com/s/4mR8IxlxFlB3VNzLGJGS1w)
 - [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
