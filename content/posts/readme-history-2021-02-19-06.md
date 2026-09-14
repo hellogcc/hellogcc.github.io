@@ -49,17 +49,23 @@ summary: "Import hellogcc.org using scripts"
 - ……共 148 条变更
 ## 当时的 README 摘要
 
-~~~md
-## Welcome to OSDT Blog
-
-寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
-
-- [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.md)
-- [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.md)
-- [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.md)
-- [2020-09-21 : OSDT大会2020开始筹备，欢迎赞助](blog/2020-09-21-osdt大会2020开始筹备，欢迎赞助/index.md)
-- [2020-08-20 : OSDT 线上技术交流会 CIRCT 专场](blog/2020-08-20-osdt-线上技术交流会-circt-专场/index.md)
-- [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
-- [2020-07-04 : LLVM + RISC-V 技术讨论会 2020-07-05](blog/2020-07-04-llvm-risc-v-技术讨论会-2020-07-05/index.md)
-- [2020-06-05 : V8 线上技术讨论会 2020-06-07](blog/2020-06-05-v8-线上技术讨论会-2020-06-07/index.md)
-~~~
+    ## Welcome to OSDT Blog
+    
+    寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
+    
+    - [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.md)
+    - [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.md)
+    - [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.md)
+    - [2020-09-21 : OSDT大会2020开始筹备，欢迎赞助](blog/2020-09-21-osdt大会2020开始筹备，欢迎赞助/index.md)
+    - [2020-08-20 : OSDT 线上技术交流会 CIRCT 专场](blog/2020-08-20-osdt-线上技术交流会-circt-专场/index.md)
+    - [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
+    - [2020-07-04 : LLVM + RISC-V 技术讨论会 2020-07-05](blog/2020-07-04-llvm-risc-v-技术讨论会-2020-07-05/index.md)
+    - [2020-06-05 : V8 线上技术讨论会 2020-06-07](blog/2020-06-05-v8-线上技术讨论会-2020-06-07/index.md)
+    - [2020-05-20 : OSDT Weekly 2020-05-20 第046期](blog/2020-05-20-osdt-weekly-2020-05-20-第046期/index.md)
+    - [2020-05-15 : QEMU 线上技术讨论会 2020-05-17](blog/2020-05-15-qemu-线上技术讨论会-2020-05-17/index.md)
+    - [2020-05-14 : OSDT Weekly 2020-05-13 第045期](blog/2020-05-14-osdt-weekly-2020-05-13-第045期/index.md)
+    - [2019-10-29 : 开源开发工具大会OSDT19议程确定，11月9日下午见！（文末报名）](blog/2019-10-29-开源开发工具大会osdt19议程确定，11月9日下午见！（文/index.md)
+    - [2019-09-18 : OSDT 2019 征集演讲](blog/2019-09-18-osdt-workshop-2019-开始征集演讲话题/index.md)
+    - [2019-01-08 : LLVM/GCC social in Nanjing China: Jan 19, 2019](blog/2019-01-08-llvm-gcc-social-in-nanjing-china-jan-19-2019/index.md)
+    - [2018-07-18 : OSDT2018 Call for Talks](blog/2018-07-18-osdt2018-call-for-talks/index.md)
+    - [2017-10-18 : OSDT17邀请函](blog/2017-10-18-osdt17邀请函/index.md)

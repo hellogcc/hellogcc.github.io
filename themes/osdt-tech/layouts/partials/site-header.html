@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="shell nav-shell">
     <a class="brand" href="{{ "/" | relURL }}">OSDT<span>/HelloGCC</span></a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="主导航">
       {{ range .Site.Menus.main }}
         <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}">{{ .Name }}</a>
       {{ end }}

@@ -23,7 +23,5 @@ summary: "Initial commit"
 - Rebuild the hellogcc.org using markdown and github.io
 ## 当时的 README 摘要
 
-~~~md
-# hellogcc.github.io
-Rebuild the hellogcc.org using markdown and github.io
-~~~
+    # hellogcc.github.io
+    Rebuild the hellogcc.org using markdown and github.io

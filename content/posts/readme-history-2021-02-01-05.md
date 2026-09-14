@@ -38,16 +38,23 @@ summary: "update index"
 - [blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
 ## 当时的 README 摘要
 
-~~~md
-## Welcome to OSDT Blog
-
-寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
-
-[blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
-
-
-[blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call](blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call.html)
-
-
-[blogs/2011-06-28-qiyao-gdb-porting](blogs/2011-06-28-qiyao-gdb-porting.html)
-~~~
+    ## Welcome to OSDT Blog
+    
+    寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
+    
+    [blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
+    
+    
+    [blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call](blogs/2011-06-28-qiyao-debugger-not-in-depth-inferior-call.html)
+    
+    
+    [blogs/2011-06-28-qiyao-gdb-porting](blogs/2011-06-28-qiyao-gdb-porting.html)
+    
+    
+    [blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development-2](blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development-2.html)
+    
+    
+    [blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development](blogs/2011-06-28-qiyao-welcome-gnu-toolchain-development.html)
+    
+    
+    [blogs/2011-06-28-xmj-GFDL-vs-GPL](blogs/2011-06-28-xmj-GFDL-vs-GPL.html)

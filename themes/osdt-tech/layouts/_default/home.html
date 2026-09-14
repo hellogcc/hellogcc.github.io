@@ -1,8 +1,10 @@
 {{ define "main" }}
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $readmeCategory := .Site.Params.readmeHistoryCategory }}
+{{ $eventCategory := .Site.Params.eventCategory }}
 {{ $recent := first 6 (sort $posts "Date" "desc") }}
-{{ $updates := first 4 (sort (where $posts "Params.categories" "intersect" (slice "README历史")) "Date" "desc") }}
-{{ $events := where $posts "Params.categories" "intersect" (slice "社区活动") }}
+{{ $updates := first 4 (sort (where $posts "Params.categories" "intersect" (slice $readmeCategory)) "Date" "desc") }}
+{{ $events := where $posts "Params.categories" "intersect" (slice $eventCategory) }}
 <section class="hero shell">
   <div class="hero-copy">
     <p class="eyebrow">Hugo · Tech Blog · Community Archive</p>
@@ -16,7 +18,7 @@
   <div class="hero-panel">
     <div class="metric"><strong>{{ len $posts }}</strong><span>篇技术文章与公告</span></div>
     <div class="metric"><strong>{{ len $events }}</strong><span>条社区活动记录</span></div>
-    <div class="metric"><strong>{{ len (where $posts "Params.categories" "intersect" (slice "README历史")) }}</strong><span>篇 README 迁移时间线</span></div>
+    <div class="metric"><strong>{{ len (where $posts "Params.categories" "intersect" (slice $readmeCategory)) }}</strong><span>篇 README 迁移时间线</span></div>
   </div>
 </section>
 

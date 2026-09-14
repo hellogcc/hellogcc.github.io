@@ -39,14 +39,12 @@ summary: "简化README，删除重复内容"
 - ……共 160 条变更
 ## 当时的 README 摘要
 
-~~~md
-## Welcome to OSDT Blog
-
-(This is a blog written in Chinese language.)
-
-寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
-
-官网地址： [https://hellogcc.org](https://hellogcc.org)
-
-博客目录请点击 [index.md](index.md)
-~~~
+    ## Welcome to OSDT Blog
+    
+    (This is a blog written in Chinese language.)
+    
+    寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
+    
+    官网地址： [https://hellogcc.org](https://hellogcc.org)
+    
+    博客目录请点击 [index.md](index.md)
