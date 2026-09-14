@@ -1,12 +1,13 @@
 {{ define "main" }}
 {{ $pages := .Site.RegularPages }}
-{{ $readmeCategory := .Site.Params.readmeHistoryCategory }}
-{{ $eventCategory := .Site.Params.eventCategory }}
 {{ $readmePages := where $pages "Type" "readme-history" }}
 {{ $articlePages := where $pages "Type" "ne" "readme-history" }}
 {{ $recent := first 6 (sort $articlePages "Date" "desc") }}
+{{ $events := slice }}
+{{ with .Site.Params.eventCategory }}
+  {{ $events = where $articlePages "Params.categories" "intersect" (slice .) }}
+{{ end }}
 {{ $updates := first 4 (sort $readmePages "Date" "desc") }}
-{{ $events := where $articlePages "Params.categories" "intersect" (slice $eventCategory) }}
 <section class="hero shell">
   <div class="hero-copy">
     <p class="eyebrow">Hugo · Tech Blog · Community Archive</p>

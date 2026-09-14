@@ -6,7 +6,7 @@
     {{ with .Content }}<div class="page-copy">{{ . }}</div>{{ end }}
   </header>
   {{ $pages := .RegularPagesRecursive }}
-  {{ if eq .RelPermalink "/posts/" }}
+  {{ if eq .Section "posts" }}
     {{ $pages = where $pages "Type" "ne" "readme-history" }}
   {{ end }}
   {{ if gt (len $pages) 0 }}
