@@ -26,17 +26,17 @@ git和bzr我都用，感觉bzr就是比git慢一点，其他好像没有什么�
 \* brobecke sighs....
 <tromey\> I still haven't read the latest git thread
 \* antgreen (~user@c74-230.rim.net) has joined #gdb
-<tromey> I didn't want the aggravation
+&lt;tromey&gt; I didn't want the aggravation
 <brobecke\> nothing much there, I wouldn't bother.
-<brobecke> there were two threads, really:
-<brobecke> (1): what are the problems that need fixing for us to switch to a different VCS
-<brobecke> (2): what is the best DVCS?
-<brobecke> (1) was a useful reminder, but (2) was a waste of time
-<SamB> shouldn't there be a "for us" in #2?
+&lt;brobecke&gt; there were two threads, really:
+&lt;brobecke&gt; (1): what are the problems that need fixing for us to switch to a different VCS
+&lt;brobecke&gt; (2): what is the best DVCS?
+&lt;brobecke&gt; (1) was a useful reminder, but (2) was a waste of time
+&lt;SamB&gt; shouldn't there be a "for us" in #2?
 <brobecke\> SamB: Yes, actually there was (a bit)
 <SamB\> of course, there's the fact that you are \*already using\* git...
-<brobecke> someone even suggested that people who do the most commits should be the ones deciding :-)
-<dmalcolm> in case it's useful: http://www.python.org/dev/peps/pep-0374/
+&lt;brobecke&gt; someone even suggested that people who do the most commits should be the ones deciding :-)
+&lt;dmalcolm&gt; in case it's useful: http://www.python.org/dev/peps/pep-0374/
 <SamB\> brobecke: as someone who has made few or no commits, I am very much in favour of that plan!
 
 这里没有什么好说的，就是他们开始讨论这个话题。第一句是亮点。介绍一下人物吧， brobecke， GDB global maintainer, Release Manager. tromey, GDB global maintainer。好，接着看他么还说什么了。
@@ -49,7 +49,7 @@ git和bzr我都用，感觉bzr就是比git慢一点，其他好像没有什么�
 <tromey\> several GNU projects make progress according to the rule of "don't tell RMS"
 <tromey\> this works, but really it ought to be beneath us
 <brobecke\> If it was just about GDB, I think it would be doable to reach a consensus and just go ahead and do it. But we are intermingled with other projects, and it's costing us big time right now.
-<SamB> RMS ought to be saner
+&lt;SamB&gt; RMS ought to be saner
 
 不知道这里怎么就开始谴责 GNU和RMS了。
 
@@ -57,35 +57,35 @@ git和bzr我都用，感觉bzr就是比git慢一点，其他好像没有什么�
 <brobecke\> when you checkout gdb, you actually checkout parts of src.
 <SamB\> the stupidest name ever
 <SamB\> but, yeah, I'm vaguely aware of the CVS repository arrangements
-<tromey> binutils guys ought to be on board, since one or two threads ago was on the  binutils list
-<tromey> this comes up like every 8 months :)
+&lt;tromey&gt; binutils guys ought to be on board, since one or two threads ago was on the  binutils list
+&lt;tromey&gt; this comes up like every 8 months :)
 \* brobecke is setting an alarm, then :)
-<tromey> anyway all the commit scripts need to be converted
-<tromey> and everything tested
-<tromey> and all src communities notified or whatever
-<tromey> Joseph posted a bullet list in one of the threads, which was, as usual for him, extremely comprehensive
-<tromey> definitive one might say
-<brobecke> there are also the "nightly" scripts that create the tarballs, which could use a good rewrite anyway
+&lt;tromey&gt; anyway all the commit scripts need to be converted
+&lt;tromey&gt; and everything tested
+&lt;tromey&gt; and all src communities notified or whatever
+&lt;tromey&gt; Joseph posted a bullet list in one of the threads, which was, as usual for him, extremely comprehensive
+&lt;tromey&gt; definitive one might say
+&lt;brobecke&gt; there are also the "nightly" scripts that create the tarballs, which could use a good rewrite anyway
 
 brobecke解释了为啥把gdb从cvs转换到别的vcs那么困难，说的挺有道理的。
 
 <SamB\> I still don't understand how bzr even qualifies as a GNU project
-<tromey> me neither
-<SamB> it doesn't seem to have any of the disadvantages usually associated with that status
+&lt;tromey&gt; me neither
+&lt;SamB&gt; it doesn't seem to have any of the disadvantages usually associated with that status
 <brobecke\> why not? (just curious, I never looked at it before)
 \* brobecke is reading the PEP document dmalcolm pasted
 <SamB\> they'll take my commits without papers, for example
-<andre> would a completely separate repo like archer and nightly sync to cvs be an option?
-<SamB> It mainly seems to be used to annoy those working on \*actual\* GNU projects by suggesting that they should use bzr
-<tromey> I thought bzr required copyright assignment to Canonical
-<SamB> for purely political reasons
-<SamB> tromey: maybe they do!
-<tromey> that for me is a critical flaw
-<tromey> I can't imagine what RMS was thinking
+&lt;andre&gt; would a completely separate repo like archer and nightly sync to cvs be an option?
+&lt;SamB&gt; It mainly seems to be used to annoy those working on \*actual\* GNU projects by suggesting that they should use bzr
+&lt;tromey&gt; I thought bzr required copyright assignment to Canonical
+&lt;SamB&gt; for purely political reasons
+&lt;SamB&gt; tromey: maybe they do!
+&lt;tromey&gt; that for me is a critical flaw
+&lt;tromey&gt; I can't imagine what RMS was thinking
 <brobecke\> so, to be part of the GNU project, all it takes is RMS accepting it?
 <SamB\> anyway, as someone who actually \*likes\* bzr, I'm glad it is not a \*real\* GNU project
-<tromey> yes, RMS just has to bless it; but one of the good things about RMS is that he is unusually consistent and principled, so you can be assured it has to be free software at least
-<tromey> anyway the bzr decision is one of the things that has really soured me on GNU
+&lt;tromey&gt; yes, RMS just has to bless it; but one of the good things about RMS is that he is unusually consistent and principled, so you can be assured it has to be free software at least
+&lt;tromey&gt; anyway the bzr decision is one of the things that has really soured me on GNU
 
 这里就有一些有意思的事情了。我以前知道bzr是gnu dVCS，但是不知道参与bzr需要给Canonical 签 copyright assignment。这个是一个很奇怪的事情。community的工作，给一个公司签 assignment，的确很奇怪。
 
@@ -99,19 +99,19 @@ brobecke解释了为啥把gdb从cvs转换到别的vcs那么困难，说的挺有
 <brobecke\> ah, I see.
 \* dmalcolm mutters incoherent something about "free-as-in-requiring-copyright-assignment-to-a-for-profit-company"
 <tromey\> what also matters to me is (1) the random authoritarianism of RMS \-- it isn't like this was some kind of process like the one Python went to -- and (2) bzr sucks IME; I think GNU should stand for \*both\* software freedom and technical excellence
-<tromey> yes, requiring assignment to a company is amazingly bad, especially considering the crap Shuttleworth says about this sort of thing
-<tromey> it has been extremely upsetting to me
-<tromey> :-(
-<brobecke> wow, sorry that it's affected you so much. FWIW, I agree that it should strive for excellence as well.
+&lt;tromey&gt; yes, requiring assignment to a company is amazingly bad, especially considering the crap Shuttleworth says about this sort of thing
+&lt;tromey&gt; it has been extremely upsetting to me
+&lt;tromey&gt; :-(
+&lt;brobecke&gt; wow, sorry that it's affected you so much. FWIW, I agree that it should strive for excellence as well.
 <SamB\> dmalcolm: hey, it's trivial to fork if at some point they do something evil...
-<dmalcolm> one other point about that PEP document: yes, Python does have a "benevolent dictator for life", but the point of the PEP system is to encourage gathering the expert opinion to bear on a subject, so that a decision can be transparently made, and the BDFL is effectively just rubber-stamping it.  It turns the debate from a mailing list thread-of-doom into a deliverable/artefact
-<dmalcolm> (sorry to weigh in; waiting on an upgrade here)
-<tromey> I would be ok with it if GNU worked this way
-<tromey> but RMS is not that open
-<tromey> I suppose even if GNU were like this, it would still be dominated by the Eli Zs and Tom Lords of the world and I would still end up looking for something else
-<tromey> Apache is perhaps a better model
-<tromey> or Fedora or Debian
-<pmuldoon> brobecke, did I suggest that? I can't remember what I said ;)
+&lt;dmalcolm&gt; one other point about that PEP document: yes, Python does have a "benevolent dictator for life", but the point of the PEP system is to encourage gathering the expert opinion to bear on a subject, so that a decision can be transparently made, and the BDFL is effectively just rubber-stamping it.  It turns the debate from a mailing list thread-of-doom into a deliverable/artefact
+&lt;dmalcolm&gt; (sorry to weigh in; waiting on an upgrade here)
+&lt;tromey&gt; I would be ok with it if GNU worked this way
+&lt;tromey&gt; but RMS is not that open
+&lt;tromey&gt; I suppose even if GNU were like this, it would still be dominated by the Eli Zs and Tom Lords of the world and I would still end up looking for something else
+&lt;tromey&gt; Apache is perhaps a better model
+&lt;tromey&gt; or Fedora or Debian
+&lt;pmuldoon&gt; brobecke, did I suggest that? I can't remember what I said ;)
 <brobecke\> someone did, not sure who it was.
 <pmuldoon\> I think I said my experience was not unique in that the only time I use CVS is when I check\-in
 <pmuldoon\> I am sorry about the thread, if it caused problems.  But I feel speaking up is the right thing to do, occasionally, even if it causes headaches ;)

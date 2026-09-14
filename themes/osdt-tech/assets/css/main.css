@@ -22,7 +22,8 @@ body {
 }
 a { color: var(--primary); text-decoration-thickness: .08em; text-underline-offset: .18em; }
 a:hover { color: #b6f4ff; }
-.brand, .main-nav a, .button, .card-link, .post-card h3 a, .timeline-item h3 a, .site-footer a { text-decoration: none; }
+.brand, .button { text-decoration: none; }
+.main-nav a, .card-link, .post-card h3 a, .timeline-item h3 a, .site-footer a { text-decoration: underline; text-decoration-color: rgba(110,231,255,.45); }
 .page-grid {
   position: fixed; inset: 0; pointer-events: none; opacity: .16;
   background-image: linear-gradient(rgba(110,231,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(110,231,255,.08) 1px, transparent 1px);
@@ -98,3 +99,5 @@ a:hover { color: #b6f4ff; }
   .hero-copy, .article-card { padding: 22px; }
   .section-head { flex-direction: column; align-items: flex-start; }
 }
+
+a:focus-visible, .button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 10px; }

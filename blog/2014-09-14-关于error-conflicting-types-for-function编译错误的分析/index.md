@@ -7,7 +7,7 @@ categories:
 
 在使用gcc编译C程序时，有时会碰到“error: conflicting types for 'function'”的编译错误。从字面意义上理解，是说函数的定义和声明不一致。在这篇文章里，我就对这个错误做个简单的分析（使用的gcc版本是4.9.0）。 （一）首先我们看一个函数的定义和声明不一致的例子：
 
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 
 int func(int a);
 
@@ -35,7 +35,7 @@ a.c:3:5: note: previous declaration of ‘func’ was here
 
 （二）最近我在把一个老程序从Solaris移植到Linux，编译时也出现了这个错误。但是我发现函数在头文件里的声明和函数定义是完全一样的，这就令我很奇怪。查了将近一天时间，最后得到结论是函数参数类型在函数声明后定义了。简化的代码如下：
 
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 
 void func(struct A \*A);
 

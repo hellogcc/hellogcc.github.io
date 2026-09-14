@@ -11,6 +11,7 @@ xmj@hellogcc.org
 
 例子：
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -43,9 +44,11 @@ fun <span style="color:#009900">(</span><span style="color:#993333">void</span><
 $ gcc prototype.<span style="color:#202020">c</span>
 prototype.<span style="color:#202020">c</span><span style="color:#339933">:</span><span style="color:#0000dd">9</span><span style="color:#339933">:</span> warning<span style="color:#339933">:</span> conflicting types <span style="color:#b1b100">for</span> ‘fun’
 prototype.<span style="color:#202020">c</span><span style="color:#339933">:</span><span style="color:#0000dd">4</span><span style="color:#339933">:</span> note<span style="color:#339933">:</span> previous implicit declaration of ‘fun’ was here</pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 这里，gcc只给出了警告信息！然而不匹配的传参操作很可能会造成部分代码（还是数据？）被覆写，程序便会出现非常诡异的现象。
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -58,6 +61,7 @@ prototype.<span style="color:#202020">c</span><span style="color:#339933">:</spa
 prototype.<span style="color:#202020">c</span><span style="color:#339933">:</span> At top level<span style="color:#339933">:</span>
 prototype.<span style="color:#202020">c</span><span style="color:#339933">:</span><span style="color:#0000dd">9</span><span style="color:#339933">:</span> warning<span style="color:#339933">:</span> conflicting types <span style="color:#b1b100">for</span> ‘fun’
 prototype.<span style="color:#202020">c</span><span style="color:#339933">:</span><span style="color:#0000dd">4</span><span style="color:#339933">:</span> note<span style="color:#339933">:</span> previous implicit declaration of ‘fun’ was here</pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 可以强制将警告信息升级为错误信息来避免这类问题。
 

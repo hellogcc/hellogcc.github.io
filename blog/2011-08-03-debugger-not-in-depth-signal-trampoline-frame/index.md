@@ -13,6 +13,7 @@ categories:
 
 这样说听着有些玄妙,我们看看内核是如何使用signal trampoline, 并保证信号处理函数返回到signal trampoline。
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -83,6 +84,7 @@ sigset_t <span style="color:#339933">*</span>set<span style="color:#339933">,</s
 &nbsp;
   <span style="color:#808080;font-style:italic">/* ... */</span>
 <span style="color:#009900">}</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 我们看到函数handle signal调用了setup frame,其中setup frame设置了使得信号处理函数返回到signal trampoline (函数返回值的地址在寄存器B3)。这样当信号处理函数执行完毕,就会自动的转到signaltrampoline,最后调用sigreturn返回。这里可以看出,signal trampoline完全处于正常程序和信号处理函数之间,如果调试器不能正确识别signal trampoline,很多调式功能在信号处理函数上,就会有问题。
 
@@ -108,6 +110,7 @@ sigset_t <span style="color:#339933">*</span>set<span style="color:#339933">,</s
 
 我们结合代码来看看如何得到signal trampoline frame上保存的寄存器。前提是我们已经知道sp，下来就是寻找保存寄存器的位置（在堆栈上）对sp的偏移。
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -122,9 +125,11 @@ sigset_t <span style="color:#339933">*</span>set<span style="color:#339933">,</s
   frame <span style="color:#339933">=</span> <span style="color:#009900">(</span><span style="color:#993333">struct</span> rt_sigframe <span style="color:#339933">*</span><span style="color:#009900">)</span> <span style="color:#009900">(</span><span style="color:#009900">(</span><span style="color:#993333">unsigned</span> <span style="color:#993333">long</span><span style="color:#009900">)</span> regs<span style="color:#339933">-&gt;</span>sp <span style="color:#339933">+</span> <span style="color:#0000dd">8</span><span style="color:#009900">)</span><span style="color:#339933">;</span>
 <span style="color:#808080;font-style:italic">/* ... */</span>
 <span style="color:#009900">}</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 从上边的代码中我们能看到，rt\_sigframe的起始地址距离sp为8，我们接着看rt\_sigframe的结构。
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -157,6 +162,7 @@ sigset_t <span style="color:#339933">*</span>set<span style="color:#339933">,</s
   <span style="color:#993333">struct</span> sigcontext uc_mcontext<span style="color:#339933">;</span>
   sigset_t uc_sigmask<span style="color:#339933">;</span> <span style="color:#808080;font-style:italic">/* mask last for extensibility */</span>
 <span style="color:#009900">}</span><span style="color:#339933">;</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 最后，我们发现寄存器都保存在结构struct sigcontext中。这样我们就可以计算出保存每个寄存器距离sp的偏移，然后从这些地址读出寄存器的值，填写每个frame，
 
