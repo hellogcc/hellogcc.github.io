@@ -3,4 +3,6 @@
 {{- $isTable := gt (len (findRE `(?s)^<table[\s\S]*</table>$` $html)) 0 -}}
 {{- if or $isIframe $isTable -}}
 {{ $html | safeHTML }}
+{{- else -}}
+{{ errorf "rawhtml shortcode only permits iframe or table markup in %s" .Page.File.Path }}
 {{- end -}}

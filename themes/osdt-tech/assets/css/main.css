@@ -87,7 +87,7 @@ a:hover { color: #b6f4ff; }
 .markdown-body pre { overflow-x: auto; padding: 16px; border-radius: 18px; background: rgba(1,10,24,.82); border: 1px solid rgba(255,255,255,.05); }
 .markdown-body :not(pre) > code { padding: .16em .4em; border-radius: 8px; background: rgba(255,255,255,.06); }
 .markdown-body blockquote { margin: 1.2rem 0; padding: .2rem 1rem; border-left: 3px solid var(--primary); background: rgba(110,231,255,.05); }
-.markdown-body table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
+.markdown-body table { width: 100%; border-collapse: collapse; }
 .markdown-body th, .markdown-body td { border: 1px solid rgba(255,255,255,.08); padding: 10px 12px; }
 .site-footer { padding: 12px 0 44px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 @media (max-width: 900px) {

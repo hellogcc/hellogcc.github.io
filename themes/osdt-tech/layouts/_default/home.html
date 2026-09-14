@@ -2,6 +2,9 @@
 {{ $pages := .Site.RegularPages }}
 {{ $readmePages := where $pages "Type" "readme-history" }}
 {{ $articlePages := where $pages "Type" "ne" "readme-history" }}
+{{ $articlePages = where $articlePages "Section" "ne" "about" }}
+{{ $articlePages = where $articlePages "Section" "ne" "authors" }}
+{{ $articlePages = where $articlePages "Section" "ne" "resources" }}
 {{ $recent := first 6 (sort $articlePages "Date" "desc") }}
 {{ $events := slice }}
 {{ with .Site.Params.eventCategory }}
