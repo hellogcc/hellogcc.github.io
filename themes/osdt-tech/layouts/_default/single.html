@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="shell article-shell">
+  <article class="article-card">
+    <header class="article-head">
+      <p class="eyebrow">{{ with .Section }}{{ . | title }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      <div class="article-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ range .Params.categories }}<span class="chip">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+    {{ if and (eq .Section "posts") (gt (len .TableOfContents) 80) }}
+      <aside class="toc-panel">
+        <h2>目录</h2>
+        {{ .TableOfContents }}
+      </aside>
+    {{ end }}
+    <div class="markdown-body">{{ .Content }}</div>
+  </article>
+</section>
+{{ end }}

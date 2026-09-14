@@ -1,0 +1,9 @@
+<article class="post-card">
+  <div class="card-meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{ with .Params.categories }}<span>{{ index . 0 }}</span>{{ end }}
+  </div>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{ with .Summary }}<p>{{ . | plainify | truncate 120 }}</p>{{ end }}
+  <a class="card-link" href="{{ .RelPermalink }}">阅读全文 →</a>
+</article>

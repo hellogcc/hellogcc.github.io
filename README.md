@@ -1,9 +1,22 @@
-## Welcome to OSDT Blog
+# OSDT / HelloGCC Hugo Blog
 
-(This is a blog written in Chinese language.)
+基于 **Hugo** 重构的 OSDT / HelloGCC 社区博客，采用科技感深色博客风格，收录历史文章、社区活动以及 README 迁移时间线。
 
-寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
+## 本地运行
 
-官网地址： [https://hellogcc.org](https://hellogcc.org)
+```bash
+hugo server
+```
 
-博客目录请点击 [index.md](index.md)
+## 构建
+
+```bash
+hugo --gc --minify
+```
+
+## 内容结构
+
+- `blog/`、`2021/`、`2023/`、`2024/`、`2025/`、`2026/`：作为 Hugo 挂载内容源保留
+- `content/posts/readme-history-*.md`：根据 README Git 提交历史拆分的独立 post
+- `content/about/`、`content/authors/`、`content/resources/`：站点页面
+- `.github/workflows/hugo.yml`：Hugo CI / GitHub Pages workflow

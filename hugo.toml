@@ -1,0 +1,78 @@
+baseURL = "https://hellogcc.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "OSDT / HelloGCC"
+theme = "osdt-tech"
+enableRobotsTXT = true
+hasCJKLanguage = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[params]
+  description = "开源开发工具技术社区博客，聚焦 GCC、LLVM、QEMU、RISC-V 与 OSDT 社区活动。"
+  heroTitle = "开源开发工具社区博客"
+  heroSubtitle = "以 Hugo 重构的技术博客，收录 HelloGCC / OSDT 的历史文章、社区动态与大会征稿信息。"
+  repoURL = "https://github.com/hellogcc/hellogcc.github.io"
+
+[[menu.main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "博客"
+  pageRef = "/posts"
+  weight = 2
+
+[[menu.main]]
+  name = "关于"
+  pageRef = "/about"
+  weight = 3
+
+[[menu.main]]
+  name = "作者"
+  pageRef = "/authors"
+  weight = 4
+
+[[menu.main]]
+  name = "资源"
+  pageRef = "/resources"
+  weight = 5
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "blog"
+    target = "content/posts"
+  [[module.mounts]]
+    source = "2021"
+    target = "content/posts"
+  [[module.mounts]]
+    source = "2023"
+    target = "content/posts"
+  [[module.mounts]]
+    source = "2024"
+    target = "content/posts"
+  [[module.mounts]]
+    source = "2025"
+    target = "content/posts"
+  [[module.mounts]]
+    source = "2026"
+    target = "content/posts"

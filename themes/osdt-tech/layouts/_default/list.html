@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="shell list-shell">
+  <header class="page-head">
+    <p class="eyebrow">Archive</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="page-copy">{{ . }}</div>{{ end }}
+  </header>
+  {{ $pages := .RegularPagesRecursive }}
+  {{ if gt (len $pages) 0 }}
+    <div class="card-grid">
+      {{ range $pages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+  {{ else }}
+    <article class="markdown-body">{{ .Content }}</article>
+  {{ end }}
+</section>
+{{ end }}
