@@ -8,5 +8,5 @@ tags = ['blog', 'technology', 'community']
 features = ['dark mode', 'responsive', 'blog']
 
 [author]
-  name = 'GitHub Copilot'
-  homepage = 'https://github.com/features/copilot'
+  name = 'HelloGCC / OSDT contributors'
+  homepage = 'https://github.com/hellogcc/hellogcc.github.io'
