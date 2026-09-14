@@ -11,7 +11,7 @@
         {{ range .Params.categories }}<span class="chip">{{ . }}</span>{{ end }}
       </div>
     </header>
-    {{ if and (eq .Section "posts") (ge $tocItems 3) }}
+    {{ if ge $tocItems 3 }}
       <aside class="toc-panel">
         <h2>目录</h2>
         {{ $toc }}
