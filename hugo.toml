@@ -1,4 +1,4 @@
-baseURL = "https://hellogcc.github.io/"
+baseURL = "https://hellogcc.org/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "OSDT / HelloGCC"
