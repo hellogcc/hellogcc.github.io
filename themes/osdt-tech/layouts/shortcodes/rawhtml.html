@@ -1,1 +1,6 @@
-{{ .Inner | safeHTML }}
+{{- $html := trim .Inner "\n\r\t " -}}
+{{- $isIframe := gt (len (findRE `(?s)^<iframe[\s\S]*</iframe>$` $html)) 0 -}}
+{{- $isTable := gt (len (findRE `(?s)^<table[\s\S]*</table>$` $html)) 0 -}}
+{{- if or $isIframe $isTable -}}
+{{ $html | safeHTML }}
+{{- end -}}

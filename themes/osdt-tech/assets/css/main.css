@@ -28,6 +28,7 @@ a:hover { color: #b6f4ff; }
   position: fixed; inset: 0; pointer-events: none; opacity: .16;
   background-image: linear-gradient(rgba(110,231,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(110,231,255,.08) 1px, transparent 1px);
   background-size: 36px 36px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 92%);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 92%);
 }
 .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
