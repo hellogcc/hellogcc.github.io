@@ -6,6 +6,9 @@
     {{ with .Content }}<div class="page-copy">{{ . }}</div>{{ end }}
   </header>
   {{ $pages := .RegularPagesRecursive }}
+  {{ if eq .RelPermalink "/posts/" }}
+    {{ $pages = where $pages "Type" "ne" "readme-history" }}
+  {{ end }}
   {{ if gt (len $pages) 0 }}
     <div class="card-grid">
       {{ range $pages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}

@@ -1,6 +1,7 @@
 ---
 title: "README 历史：Import hellogcc.org using scripts"
 date: "2021-02-19"
+type: "readme-history"
 categories:
   - "站点更新"
   - "README历史"
@@ -8,7 +9,6 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
-hideFromLatest: true
 summary: "Import hellogcc.org using scripts"
 ---
 

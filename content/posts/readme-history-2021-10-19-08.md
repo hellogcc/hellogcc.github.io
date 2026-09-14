@@ -1,6 +1,7 @@
 ---
 title: "README 历史：Fix syntax and suffix bug"
 date: "2021-10-19"
+type: "readme-history"
 categories:
   - "站点更新"
   - "README历史"
@@ -8,7 +9,6 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
-hideFromLatest: true
 summary: "Fix syntax and suffix bug"
 ---
 
