@@ -22,7 +22,7 @@ summary: "Fix syntax and suffix bug"
 - [OSDT Conf 2021 开始征稿啦！](blog/2021-10-19-CFP-OSDT-Conf-2021.md)
 ## 移除内容
 
-- [OSDT Conf 2021 开始征稿啦！][blog/2021-10-19-CFP-OSDT-Conf-2021.html]
+- [OSDT Conf 2021 开始征稿啦！](blog/2021-10-19-CFP-OSDT-Conf-2021.html)
 ## 当时的 README 摘要
 
     ## Welcome to OSDT Blog
