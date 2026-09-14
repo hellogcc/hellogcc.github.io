@@ -19,7 +19,7 @@ summary: "update index"
 
 ## 新增内容
 
-- - [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
+- [OSDT Conf 2024 开始征稿啦！](2024/2024-11-18-OSDTConf2024-cfp.md)
 ## 当时的 README 摘要
 
 ```md

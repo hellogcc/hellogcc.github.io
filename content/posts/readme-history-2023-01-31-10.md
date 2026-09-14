@@ -19,12 +19,12 @@ summary: "update index and README"
 
 ## 新增内容
 
-- - [2月25日武汉，HelloGCC线下聚会重启！技术分享征集中](blog/2023-01-31-cfp-wuhan-meetup.md)
-- - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.md)
-- - [话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
+- [2月25日武汉，HelloGCC线下聚会重启！技术分享征集中](blog/2023-01-31-cfp-wuhan-meetup.md)
+- [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.md)
+- [话题征集： OSDT Meetup 20210516 (online)](2021/20210513-OSDT-meetup-CFP.md)
 ## 移除内容
 
-- - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
+- [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
 ## 当时的 README 摘要
 
 ```md
