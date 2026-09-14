@@ -19,7 +19,7 @@ summary: "add inde"
 
 ## 新增内容
 
-- - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
+- [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
 ## 当时的 README 摘要
 
 ```md

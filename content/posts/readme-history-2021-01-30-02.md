@@ -29,8 +29,8 @@ summary: "Set theme jekyll-theme-slate"
 - # Header 1
 - ## Header 2
 - ### Header 3
-- - Bulleted
-- - List
+- Bulleted
+- List
 - ……共 22 条变更
 ## 移除内容
 

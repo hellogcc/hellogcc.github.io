@@ -17,6 +17,10 @@ summary: "Initial commit"
 - 提交主题：`Initial commit`
 - 提交哈希：`0c8729e`
 
+## 新增内容
+
+- # hellogcc.github.io
+- Rebuild the hellogcc.org using markdown and github.io
 ## 当时的 README 摘要
 
 ```md
