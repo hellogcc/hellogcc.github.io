@@ -15,6 +15,7 @@ ELF文件中会有一些重定位段，比如对应于.text段的.rel.text段。
 
 1、重定位项有两种结构类型，
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -35,17 +36,20 @@ ELF文件中会有一些重定位段，比如对应于.text段的.rel.text段。
   Elf32_Word r_info<span style="color:#339933">;</span>
   Elf32_Sword r_addend<span style="color:#339933">;</span>
 <span style="color:#009900">}</span> Elf32_Rela<span style="color:#339933">;</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 r\_offset，需要进行重定位的地方，到其所在段开始处的字节偏移量；
 
 r\_info，有两部分组成，一部分是所对应的符号表中的索引，一部分是重定位类型；它们的组合方式如下：
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
 </pre></td><td><pre style="font-family:monospace"><span style="color:#339933">#define ELF32_R_SYM(i) ((i)&gt;&gt;8)</span>
 <span style="color:#339933">#define ELF32_R_TYPE(i) ((unsigned char)(i))</span>
 <span style="color:#339933">#define ELF32_R_INFO(s,t) (((s)&lt;&lt;8)+(unsigned char)(t))</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 r\_addend，计算求值时的常量加数。
 
@@ -124,6 +128,7 @@ Disassembly of section .reginfo:
   
 MIPS通过reginfo保存一些寄存器信息，其结构体为：
 
+{{< rawhtml >}}
 <table><tbody><tr><td><pre>1
 2
 3
@@ -134,6 +139,7 @@ MIPS通过reginfo保存一些寄存器信息，其结构体为：
   Elf32_Word ri_cprmask<span style="color:#009900">[</span><span style="color:#0000dd">4</span><span style="color:#009900">]</span><span style="color:#339933">;</span>
   Elf32_SWord ri_gp_value<span style="color:#339933">;</span>
 <span style="color:#009900">}</span> ELF_RegInfo<span style="color:#339933">;</span></pre></td></tr></tbody></table>
+{{< /rawhtml >}}
 
 其中最后一个域是记录了GP0的值。可以看到，这里GP0的值为0×4000。
 

@@ -21,7 +21,7 @@ end
 下面结合一个简单的C程序（test.c），来介绍如何写自定义命令：
 
 ```
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 
 int global = 0;
 
@@ -55,13 +55,13 @@ gcc -g -o test test.c
 [root@linux:~]$ gdb test
 GNU gdb (GDB) 7.6
 Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
 and "show warranty" for details.
 This GDB was configured as "x86_64-unknown-linux-gnu".
 For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>...
+&lt;http://www.gnu.org/software/gdb/bugs/&gt;...
 Reading symbols from /data2/home/nanxiao/test...done.
 (gdb) b fun_a
 Breakpoint 1 at 0x4004d7: file test.c, line 12.
@@ -206,16 +206,16 @@ end
 [root@linux:~]$ gdb test
 GNU gdb (GDB) 7.6
 Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
 and "show warranty" for details.
 This GDB was configured as "x86_64-unknown-linux-gnu".
 For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>...
+&lt;http://www.gnu.org/software/gdb/bugs/&gt;...
 Reading symbols from /data2/home/nanxiao/test...done.
 (gdb) p &global
-$1 = (int *) 0x600900 <global>
+$1 = (int *) 0x600900 &lt;global&gt;
 (gdb) p global
 $2 = 0
 (gdb) source search_byte.gdb

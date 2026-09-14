@@ -19,11 +19,15 @@ categories:
 
 第一个session 是 GNU Toolchain ecosystem on AIX。是 David Edelsohn 讲的。主要介绍了AIX 的一些特殊之处和Toolchain做的一些改变。里边关于 shared archive 的问题我之前还碰到过。 AIX 是 SysV R3，而Linux 是 SysV R4。所以在共享库的实现有些不一样。也不是很清楚，他介绍这些的目的是什么，就是科普的介绍一下吧。 David Edelsohn 是 GCC steering committee的，属于资格很老的人啦。 第二session就是我的， [Port GDB to a new architecture processor: TI C6x](http://gcc.gnu.org/wiki/cauldron2013?action=AttachFile&do=get&target=port-gdb-tic6x-qi.pdf)。这个话题和我在去年hellogcc上讲的类似，有一些调整。比如把一些基本知识删除掉了，因为来到cauldron 的应该都是很了解这些基本知识的。虽然英语不好吧，但是也不怎么紧张。被一个老头问了几个问题，后来才知道是 Michael Eager，他维护的 DWARF。讲的怎么样，我不好说，想知道的自己看[视频](http://www.youtube.ca/watch?v=nSL4jcQCeKg&list=PLsgS8fWwKJZhrjVEN7tsQyj2nLb5z0n70&index=19)吧。
 
+{{< rawhtml >}}
 <iframe width="560" height="315" src="//www.youtube.com/embed/nSL4jcQCeKg?list=PLsgS8fWwKJZhrjVEN7tsQyj2nLb5z0n70" frameborder="0" allowfullscreen></iframe>
+{{< /rawhtml >}}
 
 :)下来的就是 teawater 的 [kgtp](http://gcc.gnu.org/wiki/cauldron2013?action=AttachFile&do=view&target=KGTP_a_GDB_knife_on_linux_kernel.pdf)了。我刚讲完，比较累，没有仔细听。想知道的自己看视频吧。
 
+{{< rawhtml >}}
 <iframe width="560" height="315" src="//www.youtube.com/embed/7nfGAbNsEZY?list=PLsgS8fWwKJZhrjVEN7tsQyj2nLb5z0n70" frameborder="0" allowfullscreen></iframe>
+{{< /rawhtml >}}
 
 上午的所有就结束了，进入了午饭时间。午饭很简单，就是一些三明治和沙拉，没有在布拉格吃的好。
 

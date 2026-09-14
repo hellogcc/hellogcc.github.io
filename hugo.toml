@@ -17,7 +17,7 @@ summaryLength = 40
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3

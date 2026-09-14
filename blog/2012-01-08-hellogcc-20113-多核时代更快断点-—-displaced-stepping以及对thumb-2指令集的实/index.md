@@ -5,7 +5,9 @@ categories:
   - "社区活动"
 ---
 
+{{< rawhtml >}}
 <iframe src="http://reader.googleusercontent.com/reader/embediframe?src=http://www.tudou.com/v/wNnGG4Uik2Q/%26rpid%3D281380%26resourceId%3D281380_05_05_99/v.swf&amp;width=480&amp;height=400" width="480" height="400"></iframe>
+{{< /rawhtml >}}
 
 [视频地址](http://www.tudou.com/programs/view/wNnGG4Uik2Q/?resourceId=281380_06_05_99&rpid=281380 "视频地址")
 
