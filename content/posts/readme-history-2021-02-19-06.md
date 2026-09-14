@@ -49,7 +49,7 @@ summary: "Import hellogcc.org using scripts"
 - ……共 148 条变更
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
@@ -62,4 +62,4 @@ summary: "Import hellogcc.org using scripts"
 - [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
 - [2020-07-04 : LLVM + RISC-V 技术讨论会 2020-07-05](blog/2020-07-04-llvm-risc-v-技术讨论会-2020-07-05/index.md)
 - [2020-06-05 : V8 线上技术讨论会 2020-06-07](blog/2020-06-05-v8-线上技术讨论会-2020-06-07/index.md)
-```
+~~~

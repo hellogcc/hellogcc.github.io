@@ -25,7 +25,7 @@ summary: "Fix syntax and suffix bug"
 - [OSDT Conf 2021 开始征稿啦！][blog/2021-10-19-CFP-OSDT-Conf-2021.html]
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
@@ -38,4 +38,4 @@ summary: "Fix syntax and suffix bug"
 - [2020-08-20 : OSDT 线上技术交流会 CIRCT 专场](blog/2020-08-20-osdt-线上技术交流会-circt-专场/index.md)
 - [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
 - [2020-07-04 : LLVM + RISC-V 技术讨论会 2020-07-05](blog/2020-07-04-llvm-risc-v-技术讨论会-2020-07-05/index.md)
-```
+~~~

@@ -1,5 +1,5 @@
 ---
-title: "README 历史：add inde"
+title: "README 历史：add index"
 date: "2022-10-04"
 categories:
   - "站点更新"
@@ -8,13 +8,13 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
-summary: "add inde"
+summary: "add index"
 ---
 
 这篇文章整理自仓库中一次 README 更新提交，用于把原本堆叠在 README 中的站点变化拆分为独立博客记录。
 
 - 提交时间：2022-10-04
-- 提交主题：`add inde`
+- 提交主题：`add index`
 - 提交哈希：`e860891`
 
 ## 新增内容
@@ -22,7 +22,7 @@ summary: "add inde"
 - [OSDT Conf 2022 开始征稿啦！](blog/2022-10-04-CFP-OSDT-Conf-2022.html)
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
@@ -35,4 +35,4 @@ summary: "add inde"
 - [2020-09-21 : OSDT大会2020开始筹备，欢迎赞助](blog/2020-09-21-osdt大会2020开始筹备，欢迎赞助/index.md)
 - [2020-08-20 : OSDT 线上技术交流会 CIRCT 专场](blog/2020-08-20-osdt-线上技术交流会-circt-专场/index.md)
 - [2020-07-05 : 7月5日的 LLVM + RISC-V 线上讨论会视频](blog/2020-07-05-7月5日的-llvm-risc-v-线上讨论会视频/index.md)
-```
+~~~

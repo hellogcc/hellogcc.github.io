@@ -41,7 +41,7 @@ summary: "feat: migrate site to Hugo"
 - 博客目录请点击 [index.md](index.md)
 ## 当时的 README 摘要
 
-```md
+~~~md
 # OSDT / HelloGCC Hugo Blog
 
 基于 **Hugo** 重构的 OSDT / HelloGCC 社区博客，采用科技感深色博客风格，收录历史文章、社区活动以及 README 迁移时间线。
@@ -53,4 +53,4 @@ hugo server
 ```
 
 ## 构建
-```
+~~~
