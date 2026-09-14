@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="brand" href="{{ "/" | relURL }}">OSDT<span>/HelloGCC</span></a>
+    <nav class="main-nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

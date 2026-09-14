@@ -1,0 +1,96 @@
+
+:root {
+  --bg: #07111f;
+  --bg-soft: rgba(11, 23, 41, 0.92);
+  --card: rgba(10, 21, 38, 0.92);
+  --border: rgba(122, 162, 255, 0.18);
+  --text: #e9eefb;
+  --muted: #93a4c6;
+  --primary: #6ee7ff;
+  --accent: #8b5cf6;
+  --glow: rgba(110, 231, 255, 0.28);
+  --shadow: 0 24px 80px rgba(1, 8, 20, 0.45);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(circle at top, rgba(77, 119, 255, 0.16), transparent 32%), var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: #b6f4ff; }
+.page-grid {
+  position: fixed; inset: 0; pointer-events: none; opacity: .16;
+  background-image: linear-gradient(rgba(110,231,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(110,231,255,.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 92%);
+}
+.shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px); background: rgba(7,17,31,.72); border-bottom: 1px solid var(--border); }
+.nav-shell { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
+.brand { font-size: 1.15rem; font-weight: 800; color: var(--text); letter-spacing: .04em; }
+.brand span { color: var(--primary); }
+.main-nav { display: flex; flex-wrap: wrap; gap: 18px; }
+.main-nav a { color: var(--muted); font-size: .96rem; }
+.main-nav a:hover { color: var(--text); }
+.hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .9fr); gap: 28px; padding: 72px 0 36px; align-items: center; }
+.hero-copy, .hero-panel, .post-card, .timeline-item, .article-card {
+  background: linear-gradient(180deg, rgba(17,29,51,.88), rgba(8,17,31,.92));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.hero-copy { border-radius: 28px; padding: 34px; }
+.hero h1, .page-head h1, .article-head h1 { margin: 0 0 16px; line-height: 1.15; }
+.hero h1 { font-size: clamp(2.4rem, 5vw, 4.6rem); }
+.eyebrow { margin: 0 0 14px; color: var(--primary); text-transform: uppercase; letter-spacing: .18em; font-size: .78rem; }
+.hero-copy p:last-of-type { color: var(--muted); max-width: 62ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
+.button { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 12px 18px; border: 1px solid var(--border); background: rgba(255,255,255,.02); color: var(--text); }
+.button.primary { background: linear-gradient(90deg, var(--primary), #4f8cff); color: #02111b; font-weight: 700; box-shadow: 0 0 24px var(--glow); }
+.hero-panel { border-radius: 28px; padding: 24px; display: grid; gap: 16px; }
+.metric { padding: 18px; border-radius: 20px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.04); }
+.metric strong { display: block; font-size: 2rem; margin-bottom: 8px; }
+.metric span { color: var(--muted); }
+.section-block, .list-shell, .article-shell { padding: 18px 0 42px; }
+.section-head { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 18px; }
+.section-head h2 { margin: 0; font-size: 1.7rem; }
+.section-head span, .section-head a, .page-copy, .card-meta, .post-card p, .article-meta, .site-footer p { color: var(--muted); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.post-card { border-radius: 24px; padding: 22px; }
+.post-card h3 { margin: 14px 0 12px; font-size: 1.16rem; line-height: 1.4; }
+.card-meta { display: flex; justify-content: space-between; gap: 12px; font-size: .86rem; }
+.card-link { display: inline-flex; margin-top: 8px; font-weight: 600; }
+.timeline-list { display: grid; gap: 14px; }
+.timeline-item { border-radius: 22px; padding: 20px 22px; display: grid; grid-template-columns: 132px 1fr; gap: 18px; align-items: start; }
+.timeline-item h3 { margin: 0 0 8px; }
+.page-head { max-width: 74ch; margin-bottom: 24px; }
+.page-head h1 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.page-copy { font-size: 1.02rem; }
+.article-card { border-radius: 28px; padding: 30px; position: relative; overflow: hidden; }
+.article-head { margin-bottom: 26px; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.chip { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 10px; background: rgba(110,231,255,.08); border: 1px solid rgba(110,231,255,.14); }
+.toc-panel { margin: 0 0 24px; padding: 16px 18px; border: 1px solid var(--border); border-radius: 20px; background: rgba(255,255,255,.02); }
+.toc-panel h2 { margin-top: 0; font-size: 1rem; }
+.markdown-body { color: var(--text); }
+.markdown-body img { max-width: 100%; height: auto; border-radius: 18px; }
+.markdown-body pre, .markdown-body code { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; }
+.markdown-body pre { overflow-x: auto; padding: 16px; border-radius: 18px; background: rgba(1,10,24,.82); border: 1px solid rgba(255,255,255,.05); }
+.markdown-body :not(pre) > code { padding: .16em .4em; border-radius: 8px; background: rgba(255,255,255,.06); }
+.markdown-body blockquote { margin: 1.2rem 0; padding: .2rem 1rem; border-left: 3px solid var(--primary); background: rgba(110,231,255,.05); }
+.markdown-body table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
+.markdown-body th, .markdown-body td { border: 1px solid rgba(255,255,255,.08); padding: 10px 12px; }
+.site-footer { padding: 12px 0 44px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .timeline-item { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .nav-shell { flex-direction: column; align-items: flex-start; }
+  .hero-copy, .hero-panel, .post-card, .article-card, .timeline-item { border-radius: 20px; }
+  .hero-copy, .article-card { padding: 22px; }
+  .section-head { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,12 @@
+name = 'OSDT Tech'
+license = 'MIT'
+licenselink = 'https://github.com/hellogcc/hellogcc.github.io/blob/main/LICENSE'
+description = 'Dark tech-style Hugo theme for the OSDT / HelloGCC community blog.'
+homepage = 'https://github.com/hellogcc/hellogcc.github.io'
+demosite = 'https://hellogcc.github.io'
+tags = ['blog', 'technology', 'community']
+features = ['dark mode', 'responsive', 'blog']
+
+[author]
+  name = 'GitHub Copilot'
+  homepage = 'https://github.com/features/copilot'

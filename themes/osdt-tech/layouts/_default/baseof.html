@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="page-grid"></div>
+  {{ partial "site-header.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer shell">
+    <p>Built with Hugo · OSDT / HelloGCC community archive</p>
+    <p><a href="{{ .Site.Params.repoURL }}">GitHub Repository</a></p>
+  </footer>
+</body>
+</html>
