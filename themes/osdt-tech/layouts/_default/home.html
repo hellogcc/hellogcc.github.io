@@ -3,7 +3,8 @@
 {{ $readmeCategory := .Site.Params.readmeHistoryCategory }}
 {{ $eventCategory := .Site.Params.eventCategory }}
 {{ $readmePages := where $pages "Params.categories" "intersect" (slice $readmeCategory) }}
-{{ $recent := first 6 (sort $pages "Date" "desc") }}
+{{ $articlePages := where $pages "Params.hideFromLatest" "ne" true }}
+{{ $recent := first 6 (sort $articlePages "Date" "desc") }}
 {{ $updates := first 4 (sort $readmePages "Date" "desc") }}
 {{ $events := where $pages "Params.categories" "intersect" (slice $eventCategory) }}
 <section class="hero shell">

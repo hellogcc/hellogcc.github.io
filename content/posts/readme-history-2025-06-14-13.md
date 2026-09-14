@@ -8,6 +8,7 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
+hideFromLatest: true
 summary: "简化README，删除重复内容"
 ---
 
