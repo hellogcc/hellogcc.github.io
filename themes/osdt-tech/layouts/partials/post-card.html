@@ -5,5 +5,5 @@
   </div>
   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   {{ with .Summary }}<p>{{ . | plainify | truncate 120 }}</p>{{ end }}
-  <a class="card-link" href="{{ .RelPermalink }}">阅读全文 →</a>
+  <a class="card-link" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">阅读全文 →</a>
 </article>
