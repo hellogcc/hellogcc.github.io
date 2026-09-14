@@ -38,8 +38,8 @@ summary: "update index"
 - ……共 22 条变更
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 [blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
-```
+~~~

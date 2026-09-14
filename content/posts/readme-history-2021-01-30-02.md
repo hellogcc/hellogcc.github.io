@@ -38,7 +38,7 @@ summary: "Set theme jekyll-theme-slate"
 - Rebuild the hellogcc.org using markdown and github.io
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/hellogcc/hellogcc.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
@@ -51,4 +51,4 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```markdown
 Syntax highlighted code block
-```
+~~~

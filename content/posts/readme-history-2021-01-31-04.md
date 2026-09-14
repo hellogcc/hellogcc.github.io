@@ -34,7 +34,7 @@ summary: "Update index"
 - ……共 32 条变更
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 [blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
@@ -47,4 +47,4 @@ summary: "Update index"
 [blogs/2011-06-28-xmj-GFDL-vs-GPL](blogs/2011-06-28-xmj-GFDL-vs-GPL.html)
 [blogs/2011-06-28-xmj-open-source-conf-notes](blogs/2011-06-28-xmj-open-source-conf-notes.html)
 [blogs/2011-07-06-jialiu-get-old-code-using-git-svn](blogs/2011-07-06-jialiu-get-old-code-using-git-svn.html)
-```
+~~~

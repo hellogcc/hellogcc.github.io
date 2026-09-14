@@ -22,7 +22,7 @@ summary: "update index"
 - [OSDT Conf 2023 开始征稿啦！](2023/2023-12-10-OSDT-Conf-2023-cfp.md)
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
@@ -35,4 +35,4 @@ summary: "update index"
 - [2020-12-02 : 第12届开源开发工具大会（OSDT2020）](blog/2020-12-02-第12届开源开发工具大会（osdt2020）/index.md)
 - [2020-10-03 : 第12届开源开发工具大会演讲征集](blog/2020-10-03-第12届开源开发工具大会演讲征集/index.md)
 - [2020-09-21 : 欢迎加入 OSDT Slack 和邮件列表，在微信群可能无法访问之前](blog/2020-09-21-欢迎加入-osdt-slack-和邮件列表，在微信群可能无法访问/index.md)
-```
+~~~

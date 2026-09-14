@@ -38,7 +38,7 @@ summary: "update index"
 - [blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer](blogs/2011-06-28-qiyao-analyze-gdb-using-clang-analyzer.html)
 ## 当时的 README 摘要
 
-```md
+~~~md
 ## Welcome to OSDT Blog
 
 寻找校对和格式志愿者！欢迎提交PR修复在迁移过程中的错误和缺失！
@@ -50,4 +50,4 @@ summary: "update index"
 
 
 [blogs/2011-06-28-qiyao-gdb-porting](blogs/2011-06-28-qiyao-gdb-porting.html)
-```
+~~~
