@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="shell article-shell">
-  {{ $headingCount := add (strings.Count "## " .RawContent) (strings.Count "### " .RawContent) }}
+  {{ $toc := .TableOfContents }}
+  {{ $tocItems := strings.Count "<li>" $toc }}
   <article class="article-card">
     <header class="article-head">
       <p class="eyebrow">{{ with .Section }}{{ . | title }}{{ end }}</p>
@@ -10,10 +11,10 @@
         {{ range .Params.categories }}<span class="chip">{{ . }}</span>{{ end }}
       </div>
     </header>
-    {{ if and (eq .Section "posts") (ge $headingCount 3) }}
+    {{ if and (eq .Section "posts") (ge $tocItems 3) }}
       <aside class="toc-panel">
         <h2>目录</h2>
-        {{ .TableOfContents }}
+        {{ $toc }}
       </aside>
     {{ end }}
     <div class="markdown-body">{{ .Content }}</div>
