@@ -28,6 +28,8 @@ summaryLength = 40
   heroTitle = "开源开发工具社区博客"
   heroSubtitle = "以 Hugo 重构的技术博客，收录 HelloGCC / OSDT 的历史文章、社区动态与大会征稿信息。"
   repoURL = "https://github.com/hellogcc/hellogcc.github.io"
+  readmeHistoryCategory = "README历史"
+  eventCategory = "社区活动"
 
 [[menu.main]]
   name = "首页"

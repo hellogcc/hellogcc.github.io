@@ -8,6 +8,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  HUGO_VERSION: '0.123.7'
+
 permissions:
   contents: read
   pages: write
@@ -31,8 +34,8 @@ jobs:
 
       - name: Install Hugo
         run: |
-          sudo apt-get update
-          sudo apt-get install -y hugo
+          curl -fsSL -o /tmp/hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i /tmp/hugo.deb
           hugo version
 
       - name: Build site
