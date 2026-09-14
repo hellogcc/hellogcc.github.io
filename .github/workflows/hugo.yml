@@ -14,10 +14,6 @@ env:
 permissions:
   contents: read
 
-concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -54,6 +50,9 @@ jobs:
       contents: read
       pages: write
       id-token: write
+    concurrency:
+      group: deploy-pages-${{ github.ref }}
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

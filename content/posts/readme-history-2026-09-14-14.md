@@ -1,6 +1,7 @@
 ---
 title: "README 历史：feat: migrate site to Hugo"
 date: "2026-09-14"
+type: "readme-history"
 categories:
   - "站点更新"
   - "README历史"
@@ -8,7 +9,6 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
-hideFromLatest: true
 summary: "feat: migrate site to Hugo"
 ---
 

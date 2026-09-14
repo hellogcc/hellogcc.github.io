@@ -1,6 +1,7 @@
 ---
 title: "README 历史：简化README，删除重复内容"
 date: "2025-06-14"
+type: "readme-history"
 categories:
   - "站点更新"
   - "README历史"
@@ -8,7 +9,6 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
-hideFromLatest: true
 summary: "简化README，删除重复内容"
 ---
 

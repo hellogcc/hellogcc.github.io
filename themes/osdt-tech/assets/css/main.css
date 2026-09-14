@@ -30,7 +30,10 @@ a:hover { color: #b6f4ff; }
   mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 92%);
 }
 .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
-.site-header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px); background: rgba(7,17,31,.72); border-bottom: 1px solid var(--border); }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(7,17,31,.96); border-bottom: 1px solid var(--border); }
+@supports ((backdrop-filter: blur(18px)) or (-webkit-backdrop-filter: blur(18px))) {
+  .site-header { background: rgba(7,17,31,.72); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+}
 .nav-shell { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
 .brand { font-size: 1.15rem; font-weight: 800; color: var(--text); letter-spacing: .04em; }
 .brand span { color: var(--primary); }
