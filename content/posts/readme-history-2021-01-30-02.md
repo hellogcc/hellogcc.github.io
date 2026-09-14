@@ -8,6 +8,7 @@ tags:
   - "README"
   - "迁移"
   - "时间线"
+hideFromLatest: true
 summary: "Set theme jekyll-theme-slate"
 ---
 
