@@ -1,4 +1,4 @@
-baseURL = "https://hellogcc.github.io/"
+baseURL = "https://hellogcc.org/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "OSDT / HelloGCC"
@@ -26,10 +26,28 @@ summaryLength = 40
 [params]
   description = "开源开发工具技术社区博客，聚焦 GCC、LLVM、QEMU、RISC-V 与 OSDT 社区活动。"
   heroTitle = "开源开发工具社区博客"
-  heroSubtitle = "以 Hugo 重构的技术博客，收录 HelloGCC / OSDT 的历史文章、社区动态与大会征稿信息。"
+  tagline = "GCC · LLVM · QEMU · RISC-V · OSDT Conf"
+  heroSubtitle = "HelloGCC / OSDT 社区自 2007 年起的技术文章、社区动态与开源开发工具大会（OSDT Conf）征稿信息。"
   repoURL = "https://github.com/hellogcc/hellogcc.github.io"
   readmeHistoryCategory = "README历史"
   eventCategory = "社区活动"
+
+# Friend links shown in the footer. Remove the block to hide the row.
+[[params.friendLinks]]
+  name = "HelloLLVM"
+  url = "https://hellollvm.org"
+[[params.friendLinks]]
+  name = "CNRV"
+  url = "https://cnrv.io"
+[[params.friendLinks]]
+  name = "甲辰计划"
+  url = "https://rv2036.org"
+[[params.friendLinks]]
+  name = "松竹梅计划"
+  url = "https://songzhumei-project.org"
+[[params.friendLinks]]
+  name = "PLCT Lab"
+  url = "https://plctlab.github.io"
 
 [[menu.main]]
   name = "首页"
