@@ -1,23 +1,24 @@
 {{ define "main" }}
-<section class="shell article-shell">
-  {{ $toc := .TableOfContents }}
-  {{ $tocItems := strings.Count "<li>" $toc }}
-  <article class="article-card">
-    <header class="article-head">
-      <p class="eyebrow">{{ with .Section }}{{ . | title }}{{ end }}</p>
-      <h1>{{ .Title }}</h1>
-      <div class="article-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-        {{ range .Params.categories }}<span class="chip">{{ . }}</span>{{ end }}
-      </div>
-    </header>
-    {{ if ge $tocItems 3 }}
-      <aside class="toc-panel">
-        <h2>目录</h2>
-        {{ $toc }}
-      </aside>
-    {{ end }}
-    <div class="markdown-body">{{ .Content }}</div>
-  </article>
-</section>
+{{ $toc := .TableOfContents }}
+{{ $tocItems := strings.Count "<li>" $toc }}
+<article class="post">
+  <header class="post-head">
+    <h1>{{ .Title }}</h1>
+    <span class="meta">
+      {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ end }}
+      {{ with .Site.GetPage (printf "/%s" .Section) }}<a class="tag" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      {{ range .Params.categories }}<span class="tag">{{ . }}</span>{{ end }}
+    </span>
+  </header>
+  {{ if ge $tocItems 3 }}
+    <aside class="toc-panel">
+      <h2>目录</h2>
+      {{ $toc }}
+    </aside>
+  {{ end }}
+  <div class="post-content markdown-body">{{ .Content }}</div>
+  <footer class="post-footer">
+    {{ with .Site.GetPage (printf "/%s" .Section) }}<a href="{{ .RelPermalink }}">← 返回{{ .Title }}</a>{{ end }}
+  </footer>
+</article>
 {{ end }}
