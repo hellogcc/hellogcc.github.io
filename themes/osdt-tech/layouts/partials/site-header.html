@@ -1,9 +1,20 @@
 <header class="site-header">
-  <div class="shell nav-shell">
-    <a class="brand" href="{{ "/" | relURL }}">OSDT<span>/HelloGCC</span></a>
-    <nav class="main-nav" aria-label="主导航">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-mark" aria-hidden="true">GCC</span>
+      <span>
+        {{ .Site.Title }}
+        {{ with .Site.Params.tagline }}<span class="brand-tagline">{{ . }}</span>{{ end }}
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      {{ $current := . }}
       {{ range .Site.Menus.main }}
-        <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}">{{ .Name }}</a>
+        {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+        <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      {{ with .Site.Params.repoURL }}
+        <a class="icon-link" href="{{ . }}" title="GitHub" rel="noopener">{{ partial "icon.html" "github" }}<span class="sr-only">GitHub</span></a>
       {{ end }}
     </nav>
   </div>

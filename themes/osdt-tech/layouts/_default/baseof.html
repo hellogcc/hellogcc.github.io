@@ -4,14 +4,10 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <div class="page-grid"></div>
   {{ partial "site-header.html" . }}
-  <main>
+  <main class="wrap">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer class="site-footer shell">
-    <p>由 Hugo 驱动 · OSDT / HelloGCC 社区档案</p>
-    <p><a href="{{ .Site.Params.repoURL }}">查看 OSDT / HelloGCC GitHub 仓库</a></p>
-  </footer>
+  {{ partial "site-footer.html" . }}
 </body>
 </html>
